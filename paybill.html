@@ -10,15 +10,38 @@
     <link rel="stylesheet" href="asset/css/style.css">
     <!-- incon -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
     <!-- ไอคอนบนแท็บ -->
     <link rel="shortcut icon" href="assets/img/myProfile.png">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Select Account Page</title>
+    <title>Pay Bill Page</title>
 </head>
     <body>
         <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <div class="nav container02">
+                <!--LOGO-->
+                <a href="index.html" class="logo"><i class='bx bx-home'></i>Baiplus</a>
+                <!--Menu Icon-->
+                <input type="checkbox" name="" id="menu">
+                <label for="menu"><i class='bx bx-menu' id="menu-icon" ></i></label>
+                <!--Navlist-->
+                <ul class="navbar">
+                    
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#sales">Sales</a></li>
+                    <li><a href="#properties">Properties</a></li>
+                </ul>
+                <!--LOGIN BUTTON-->
+                <a href="login.html" class="btn">Log In</a>
+            </div>
+    
+    
+       
+    </header>
 
 
         <!--==================== MAIN ====================-->
@@ -62,8 +85,8 @@
                     </div>
 
 
-                    <div class="subtitle label ">To :</div>
-                    <form action="selecttran.html" class="grid pay__container container">
+                    <div class="subtitle label ">Phone Bills :</div>
+                    <form action="paybill_number.html" class="grid pay__container container">
 
                         <button class="pay__box grid" value="">
                             <div class="pay__box-img">
@@ -87,6 +110,28 @@
                                 </div>
                             <div class="info pay__box-label">Dtac / Month</div>
                         </button>
+                    </form>
+
+                    <div class="subtitle label ">Utilities :</div>
+                    <form action="paybill_number.html" class="grid pay__container container">
+
+                        <button class="pay__box grid" value="">
+                            <div class="pay__box-img">
+                            <img src="asset/img/MEA_new.png" alt="" class="pay__img " style="height: 3rem; width: auto;">
+                            </div>
+                            <div class="info pay__box-label">Metropolitan Electricity Authority</div>
+                            <!-- <div class="info select__bank">AIS / Month</div> -->
+                        </button>
+    
+                        <button class="select__box" value="">
+                            <div class="pay__box-img">
+                                <img src="asset/img/การประปานครหลวง.svg.png" alt="" class="pay__img " style="width: 2.5rem;">
+                            </div>
+                            <div class="info pay__box-label">Metropolitan Waterworks Authority</div>
+                        </button>
+    
+                        
+
                     </form>
 
     

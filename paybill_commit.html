@@ -15,29 +15,11 @@
     <link rel="shortcut icon" href="assets/img/myProfile.png">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Withdraw Page</title>
+    <title>Select Account Page</title>
 </head>
     <body>
         <!--==================== HEADER ====================-->
-
- <header class="header" id="header">
-        <div class="nav container02">
-            <!--LOGO-->
-            <a href="index.html" class="logo"><i class='bx bx-home'></i>Baiplus</a>
-            <!--Menu Icon-->
-            <input type="checkbox" name="" id="menu">
-            <label for="menu"><i class='bx bx-menu' id="menu-icon" ></i></label>
-            <!--Navlist-->
-            <ul class="navbar">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#sales">Sales</a></li>
-                <li><a href="#properties">Properties</a></li>
-            </ul>
-            <!--LOGIN BUTTON-->
-            <a href="login.html" class="btn info">Log In</a>
-        </div>
- </header>
+    <!--  =================== Header ===============  -->
     <!-- <header class="header" id="header">
         <nav class="nav container">
             <a href="#" class="nav__logo">Tanaton</a>
@@ -99,15 +81,37 @@
         </nav>
 
     </header> -->
+    <header class="header" id="header">
+        <div class="nav container02">
+            <!--LOGO-->
+            <a href="index.html" class="logo"><i class='bx bx-home'></i>Baiplus</a>
+            <!--Menu Icon-->
+            <input type="checkbox" name="" id="menu">
+            <label for="menu"><i class='bx bx-menu' id="menu-icon" ></i></label>
+            <!--Navlist-->
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#sales">Sales</a></li>
+                <li><a href="#properties">Properties</a></li>
+            </ul>
+            <!--LOGIN BUTTON-->
+            <a href="login.html" class="btn">Log In</a>
+        </div>
+
+
+   
+</header>
+
 
 
         <!--==================== MAIN ====================-->
         <main class="main">
 
             <!--==================== HOME ====================-->
-            <section class="withdraw section" id="withdraw">
+            <section class="tranfer section" id="">
                 <div class="withdraw__container grid container">
-                <h2 class="section__title">With Draw</h2>
+                <h2 class="section__title">Tranfer</h2>
                 <span class="section__subtitle">Lorem ipsum dolor sit amet.</span>
                 
                 <div class="withdraw__mainacc grid">
@@ -120,9 +124,9 @@
                             <select name="account__id" id="account__id" class="withdraw__account info">
                                 <i class="uil uil-university info icon"></i>
                                 <option value="001">xxx-x-x0572-x</option>
-                                <option value="001">xxx-x-x0572-x</option>
-                                <option value="001">xxx-x-x0572-x</option>
-                                <option value="001">xxx-x-x0572-x</option>                    
+                                <option value="001">xxx-x-x0856-x</option>
+                                <option value="001">xxx-x-x4537-x</option>
+                                <option value="001">xxx-x-x8772-x</option>                    
                               </select>
                         </div>
                         <div class="info info__name">Phongprawi Rattanasri</div>
@@ -130,47 +134,41 @@
                     </div>
                     </div>
 
-                    <!-- <div class="subtitle">Select Account</div>
-                    <div class="withdraw__box-acc ">
-                        <select name="cars" id="cars" class="withdraw__account">
-                          <option value="001">                        
-                            <i class="uil uil-university info icon"> xxx-x-x0571-x</i>
-                          <option value="002">                       
-                            <i class="uil uil-university info icon"> xxx-x-x0582-x</i>
-                          <option value="003">  
-                            <i class="uil uil-university info icon"> xxx-x-x0642-x</i>                      
-                        </select>
-                    </div> -->
-                    </div>
+                    
 
-                    <div class="subtitle withdraw__label">Amount</div>
-                    <div class="withdraw__box-acc ">
-                        <!-- <div class="button__money button__money-input grid">
-                            <button><i class="uil uil-edit icon button__moneybox "></i></button>
-                        
-                        </div> -->
-                        <div class="button__money">
-                        <div class="button__moneychoice">
-                            <button class="button__moneybox button button--flex">100</button>
-                            <button class="button__moneybox button button--flex">200</button>
-                            <button class="button__moneybox button button--flex">500</button>
-                            <button class="button__moneybox button button--flex">1000</button>
-                            <button class="button__moneybox button button--flex">10000</button>
-                            <button class="button__moneybox button button--flex">100000</button>
+                    <div class="subtitle label ">To :</div>
+                    <button class="pay__box grid" value="">
+                        <div class="pay__box-img">
+                        <img src="asset/img/ais.png" alt="" class="pay__img ">
                         </div>
+                        <div class="info pay__box-label">AIS / Month</div>
+                        <!-- <div class="info select__bank">AIS / Month</div> -->
+                    </button>
+                    
 
-                        <form >
-                            <label for="amount"></label>
-                            <input class="button__input" type="text" id="pin" name="pin" placeholder="100.00-20,000">
-                        </form>
+                    
+                    <div class="subtitle label">Bill Number</div>
+                    <div class="select__container container ">
+                            <p class=" select__input info"id="" name="bill_tag" >12-235468-52
                     </div>
+                    
+                    <div class="subtitle label">Amount</div>
+                    <div class="select__container container ">
+                        <p class=" select__input info"id="" name="bill_tag" > 1,520.84 Bath
                     </div>
+                                        
+                    <div class="subtitle label">Note</div>
+                    <div class="select__container container ">
+                            <textarea class=" select__input info" type="" id="" name="tranfer_amount" placeholder="For Demacia"></textarea>
+                    </div>
+                
+                    
     
-                    <form action="withdraw_commit.html">
-        
-                            <button class="button__summit button__input info" name="INSERT" type="submit" id="INSERT" value="INSERT">Summit</button>
-                        
-                        </form>
+                    <form class="" action="paybill_code.html">
+                        <!-- <label for="" class="button__content"> -->
+                            <button class="button__summit info" name="INSERT" type="submit" id="INSERT" value="INSERT">COMMIT</button>
+                        <!-- </label> -->
+                    </form>
                 </div>
             </div>
                 
