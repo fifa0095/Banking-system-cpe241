@@ -22,6 +22,15 @@
     --container-color: #fff;
     --scrolll-bar-color:hsl(var(--hue-color), 12%, 95%);
     --scrolll-thumb-color:hsl(var(--hue-color), 12%, 80%);
+    
+    /* --first-color-second: hsl(var(--hue-color), 30%, 8%);
+    --title-color: hsl(var(--hue-color), 8%, 95%);
+    --text-color: hsl(var(--hue-color), 8%, 75%);
+    --input-color: hsl(var(--hue-color), 29%, 16%);
+    --body-color: hsl(var(--hue-color), 28%, 12%);
+    --container-color: hsl(var(--hue-color), 29%, 16%);
+    --scrolll-bar-color:hsl(var(--hue-color), 12%, 48%);
+    --scrolll-thumb-color:hsl(var(--hue-color), 12%, 30%); */
 
      /*========== Font and typography ==========*/
     /* แบบอักษรและการพิมพ์ */
@@ -328,6 +337,7 @@ font-weight: 500;
 ,.pay__box:hover{
     background-color: var(--input-color);
     border: none;
+    cursor: pointer;
 }
 .button__moneybox:hover{
     background-color: var(--input-color);
@@ -611,7 +621,8 @@ font-weight: 500;
     /* padding: 0rem 1rem 0.75rem; */
     grid-template-columns: repeat(1,1fr);
     justify-content: space-around;
-    border: solid firebrick;
+    border: solid var(--first-color-lighter) .25rem; 
+    border-bottom: none;
     background-color: var(--container-color);
 }
 
