@@ -127,7 +127,7 @@ body{
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     background-color:var(--body-color);
-    /* color: var(--text-color); */
+    /* background-color: var(--first-color-alt); */
 }
 
 h1,h2,h3,h4{
@@ -422,6 +422,21 @@ font-weight: 500;
     grid-template-columns: repeat(2,1fr);
     gap: 0.5rem;
 }
+.info__withdraw-code{
+    text-align: right;
+    color: var(--first-color);
+    font-family: var(--body-font);
+    font-size: var(--h2-font-size);
+}
+.info__money-withdraw{
+    text-align: right;
+    color: var(--first-color);
+}
+
+.info__money{
+    text-align: start;
+    color: var(--first-color);
+}
 /* ====================== confirm ============ */
 .withdraw__data-comfirm{
         /* border: 2px solid black; */
@@ -442,10 +457,7 @@ font-weight: 500;
     text-align: center;
     /* margin-right: 12%; */
 }
-.info__money{
-    text-align: start;
-    color: var(--first-color);
-}
+
 .withdraw__box-acc-commit{
     border-radius: 10%;
     margin: .25rem .5rem .25rem .5rem;
@@ -597,14 +609,12 @@ font-weight: 500;
     justify-content: space-around;
 }
 .receipt__title{
-    width: 50%;
-    display: grid;
-    /* border: solid 3px var(--first-color); */
-    /* margin-top: var(--mb-0-25); */
+    width: 70%;
+    /* display: grid; */
+    height: 40%;
     border-radius: 0.25rem;
-    /* padding: .75rem 1rem 0.75rem; */
-    /* border: solid firebrick; */
-    /* align-items: center; */
+    /* border: solid; */
+    padding-top:var(--mb-1-5) ;
 }
 .receipt__topic{
     width: auto;
@@ -614,12 +624,14 @@ font-weight: 500;
     justify-content: space-around;
 }
 .receipt__container{
+    /* border: solid firebrick; */
     width: 50%;
     /* margin-left: 25%; */
-    display: grid;
+    display: block;
     border-radius: 0.25rem;
     /* padding: 0rem 1rem 0.75rem; */
     grid-template-columns: repeat(1,1fr);
+    row-gap: 0.5px;
     justify-content: space-around;
     border: solid var(--first-color-lighter) .25rem; 
     border-bottom: none;
@@ -638,10 +650,7 @@ font-weight: 500;
     height: 5rem;
     /* align-items: center; */
 }
-.receipt__content{
-    width: 100%;
-    /* border: solid; */
-}
+
 .receipt__info{
     border-radius: 10%;
     /* margin: .25rem .5rem .25rem .5rem; */
@@ -669,6 +678,7 @@ font-weight: 500;
     /* grid-template-columns: repeat(2,1fr); */
     display: flex;
     justify-content: space-evenly;
+    
 }
 .receipt__obj{
     margin-top: var(--mb-2);
@@ -687,5 +697,73 @@ font-weight: 500;
     color: greenyellow;
     font-weight: var(--font-semi-bold);
     font-size: var(--mb-1-5);
-    margin-bottom: var(--mb-1-5);
+    padding-bottom: var(--mb-1-25);
+}
+.bill__sub{
+    font-size: var(--small-font-size);
+    /* border: solid; */
+
+    font-family: var(--body-font);
+    color: var(--text-color-light);
+    
+    width: 100%;
+}
+
+.receipt__withdraw-topic{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    font-size: var(--h3-font-size);
+}
+.receipt__sub-data{
+    font-size: var(--font-medium);
+    font-family: var(--body-font);
+    color: var(--text-color-light);
+    /* border: solid; */
+    text-align: right;
+    width: 100%;
+}
+.receipt__paper{
+        /* border: solid firebrick; */
+        width: 90%;
+        border-radius: 0.25rem;
+        
+        border: solid var(--text-color-light) 1px; 
+        border-bottom: none;
+        background-color: var(--container-color);
+}
+.receipt__paper{
+    /* border: solid firebrick; */
+    width: 90%;
+    border-radius: 0.25rem;
+    
+
+    background-color: var(--container-color);
+}
+.receipt__paper-set{
+    /* border: solid firebrick; */
+    width: 100%;
+    border-radius: 0.25rem;
+    display: flex;
+    justify-content: space-around;
+
+    background-color: var(--container-color);
+}
+.receipt__content{
+    width: 100%;
+    padding-bottom: var(--mb-2);
+    margin-top: var(--mb-2);
+    border-bottom: solid var(--text-color-light) 1px; 
+    width: 100%;
+    margin-bottom: var(--mb-1);
+    
+}
+.receipt__data-success{
+    font-size: var(--h3-font-size);
+}
+.receipt__img-phone{
+    height: 40px;
+    width: auto;
+    /* border: solid; */
+    margin: 10%;
 }
