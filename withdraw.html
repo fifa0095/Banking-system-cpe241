@@ -130,17 +130,6 @@
                     </div>
                     </div>
 
-                    <!-- <div class="subtitle">Select Account</div>
-                    <div class="withdraw__box-acc ">
-                        <select name="cars" id="cars" class="withdraw__account">
-                          <option value="001">                        
-                            <i class="uil uil-university info icon"> xxx-x-x0571-x</i>
-                          <option value="002">                       
-                            <i class="uil uil-university info icon"> xxx-x-x0582-x</i>
-                          <option value="003">  
-                            <i class="uil uil-university info icon"> xxx-x-x0642-x</i>                      
-                        </select>
-                    </div> -->
                     </div>
 
                     <div class="subtitle withdraw__label">Amount</div>
@@ -151,23 +140,28 @@
                         </div> -->
                         <div class="button__money">
                         <div class="button__moneychoice">
-                            <button class="button__moneybox button button--flex">100</button>
-                            <button class="button__moneybox button button--flex">200</button>
-                            <button class="button__moneybox button button--flex">500</button>
-                            <button class="button__moneybox button button--flex">1000</button>
-                            <button class="button__moneybox button button--flex">10000</button>
-                            <button class="button__moneybox button button--flex">100000</button>
+                            <button type="button" class="button__moneybox " onclick="addmoneyNumber(100)">100</button>
+                            <button type="button" class="button__moneybox " onclick="addmoneyNumber(200)">200</button>
+                            <button type="button" class="button__moneybox " onclick="addmoneyNumber(500)">500</button>
+                            <button type="button" class="button__moneybox " onclick="addmoneyNumber(1000)">1000</button>
+                            <button type="button" class="button__moneybox " onclick="addmoneyNumber(5000)">5000</button>
+                            <button type="button" class="button__moneybox " onclick="addmoneyNumber(10000)">10000</button>
+                            <button type="button" class="button__summit " onclick="clearmoney()">Clear</button>
+                            
                         </div>
 
                         <form >
                             <label for="amount"></label>
-                            <input class="button__input" type="text" id="pin" name="pin" placeholder="100.00-20,000">
+                            <input type="number" class="money-display "placeholder="100.00-20,000" autocomplete="off">
+                            <!-- <input class="button__input" type="text" id="pin" name="pin" placeholder="100.00-20,000"> -->
                         </form>
                     </div>
                     </div>
-    
+
+      
+                    
                     <form action="withdraw_commit.html">
-        
+                            
                             <button class="button__summit button__input info" name="INSERT" type="submit" id="INSERT" value="INSERT">Summit</button>
                         
                         </form>
@@ -190,6 +184,6 @@
         <script src=""></script>
 
         <!--==================== MAIN JS ====================-->
-        <script src="asset/js/main.js"></script>
+        <script src="Asset/js/main.js"></script>
     </body>
 </html>
