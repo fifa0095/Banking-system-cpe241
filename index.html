@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon " href="Asset/img/Baiplus_final.png">
-    <title> Baiplus Banking</title>
+    <title>Banking Baiplus</title>
     <link rel="stylesheet" href="Asset/css/style02.css">
-    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
    
 </head>
 <body>
@@ -15,16 +15,23 @@
     <header>
         <div class="nav container">
             <!--LOGO-->
-            <a href="index.html" class="logo"><i class='bx bx-home'></i>Baiplus</a>
+            <a href="index.html" class="logo"><i class='bx bx-home'></i>BaiPlus</a>
             <!--Menu Icon-->
             <input type="checkbox" name="" id="menu">
             <label for="menu"><i class='bx bx-menu' id="menu-icon" ></i></label>
             <!--Navlist-->
             <ul class="navbar">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
+                <li class="dropdown-link">
+                    <a href="">Accounts<i class='bx bxs-chevron-down'></i></a>
+                    <ul class="dropdown">
+                        <li><a href="account.html">Profile Accounts</a></li>
+                        <li><a href="complex.html">Anothers Accounts</a></li>   
+                    </ul>
+                </li>
                 <li><a href="#sales">Sales</a></li>
                 <li><a href="#properties">Properties</a></li>
+                
             </ul>
             <!--LOGIN BUTTON-->
             <a href="login.html" class="btn">Log In</a>
@@ -32,58 +39,57 @@
 
 
     </header>
-    <!-- Home
+    <!--Home-->
     <section class="home container" id="home">
         <div class="home-text">
              <h1>Find Your Next <br> Perfect Place to <br>Live.</h1>
-             <a href="#" class="btn">Sign Up</a>
+             <a href="sign-up.html" class="btn">Sign Up</a>
         </div>
     </section>
     <section class="about container" id="about">
         <div class="about-img">
-            <img src="1.jpg" alt="">
+            <img src="4.jpg" alt="">
         </div>
         <div class="about-text">
             <span>About Us</span>
             <h2>We Provide The Best <br> Property For You!</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque exercitationem totam quasi maiores eum temporibus nihil cupiditate animi quidem cum odit, reiciendis dolorem corrupti aperiam unde expedita ex distinctio consectetur?</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque exercitationem totam quasi maiores eum temporibus nihil cupiditate animi quidem cum odit, reiciendis dolorem corrupti aperiam unde expedita ex distinctio consectetur?</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque exercitationem totam quasi maiores eum temporibus nihil cupiditate animi quidem cum odit, reiciendis dolorem corrupti aperiam unde expedita ex distinctio consectetur?</p>
-            <a href="#" class="btn">Learn more</a>
+            <p>​​​​​​ธนาคารใบพลัสไทยก่อตั้งเมื่อวันที่ 8 มิถุนายน พ.ศ. 2488 ด้วยทุนจดทะเบียน 5 ล้านบาท โดยมีสาขาสำนักถนนเสือป่าในปัจจุบันเป็นที่ทำการแห่งแรก ซึ่งเริ่มด้วยพนักงานเพียง 21 คน แต่เพียงงวดบัญชีแรกที่สิ้นสุดหรือเพียง 6 เดือน ณ วันที่ 31 ธันวาคม พ.ศ. 2488 ก็มียอดเงินฝากสูงถึง 12 ล้านบาท และมีสินทรัพย์ 15 ล้านบาท
+                
+                ตลอดหลายทศวรรษที่ผ่านมา ธนาคารมุ่งมั่นพัฒนาองค์กรและผลิตภัณฑ์ทางการเงินใหม่อย่างสม่ำเสมอเพื่อให้บริการที่เป็นเลิศ ภายใต้คำขวัญ ​“บริการทุกระดับประทับใจ”</p>
+            
         </div>
-    </section> -->
+    </section>
     <section class="sales container" id="sales">
         <!--Box1-->
-        <a class="box" href="tranfer_selectBank.html">
-            <i class='bx bx-user' ></i>
+        <div class="box">
+            <i class='bx bx-transfer'></i>
             <h3>Transfer</i></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-        </a>
+        </div>
 
           <!--Box2-->
-          <a class="box" href="withdraw.html">
-            <i class='bx bx-desktop' ></i>
+          <div class="box">
+            <i class='bx bx-money-withdraw' ></i>
             <h3>Withdraw</i></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-          </a>
+            
+        </div>
 
           <!--Box3-->
-          <a class="box" href="paybill.html">
-            <i class='bx bx-home-alt' ></i>
+          <div class="box">
+            <i class='bx bx-receipt' ></i>
             <h3>Pay Bill</i></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sapiente labore impedit atque, voluptates facere harum in quam id ipsa minus illo qui suscipit laboriosam adipisci nisi magni eum ex.</p>
-          </a>
+            
+        </div>
         <!--Box4-->
         <div class="box">
-            <i class='bx bxs-wallet-alt' ></i>
+            <i class='bx bx-credit-card' ></i>
             <h3>Credist Card</i></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sapiente labore impedit atque, voluptates facere harum in quam id ipsa minus illo qui suscipit laboriosam adipisci nisi magni eum ex.</p>
+            
         </div>
          <!--Box4-->
          <div class="box">
-            <i class='bx bxs-wallet-alt' ></i>
+            <i class='bx bx-popsicle' ></i>
             <h3>Loan</i></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sapiente labore impedit atque, voluptates facere harum in quam id ipsa minus illo qui suscipit laboriosam adipisci nisi magni eum ex.</p>
+            
         </div>
         
         

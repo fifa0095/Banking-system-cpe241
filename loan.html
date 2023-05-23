@@ -17,23 +17,37 @@
 <body>
     <!--Nav BAR-->
     <header>
-        <div class="nav container02">
-            <!--LOGO-->
-            <a href="index.html" class="logo"><i class='bx bx-home'></i>Baiplus</a>
-            <!--Menu Icon-->
-            <input type="checkbox" name="" id="menu">
-            <label for="menu"><i class='bx bx-menu' id="menu-icon" ></i></label>
-            <!--Navlist-->
-            <ul class="navbar">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#sales">Sales</a></li>
-                <li><a href="#properties">Properties</a></li>
-            </ul>
-            <!--LOGIN BUTTON-->
-            <a href="login.html" class="btn">Log In</a>
-        </div>
 
+            <div class="nav-bar container02">
+                <!--LOGO-->
+                <a href="index.html" class="logo"><img src="Asset/img/Baiplus_final-removebg-preview.png" class="nav__icon" alt="" /></i>BaiPlus</a>
+                <!--Menu Icon-->
+                <input type="checkbox" name="" id="menu">
+                <label for="menu"><i class='bx bx-menu' id="menu-icon" ></i></label>
+                <!--Navlist-->
+                <ul class="navbar">
+                    <li><a href="#home">Home</a></li>
+                    <li class="dropdown-link">
+                        <a href="">Accounts<i class='bx bxs-chevron-down'></i></a>
+                        <ul class="dropdown">
+                            <li><a href="account.html">Profile Accounts</a></li>
+                            <li><a href="complex.html">Anothers Accounts</a></li>   
+                        </ul>
+                    </li>
+                    <li><a href="#sales">Sales</a></li>
+                    <li><a href="#properties">Properties</a></li>
+  
+                </ul>
+                <!--LOGIN BUTTON-->
+                <a href="login.html" class="btn">Log In</a>
+                <div class="nav__btns">
+                  <!-- theme change button -->
+                  <i class="uil uil-moon change-theme" id="theme-button"></i>
+              </div>
+            </div>
+    
+    
+      
 
     </header>
 
@@ -113,22 +127,29 @@
 
             
                                       <div class="loan-form">
-                                        <h1>Loan Application</h1>
+                                        <h1>LOAN APPLICATION FORM</h1>
                                         <form>
-                                          <label for="name">Name:</label>
-                                          <input type="text" id="name" name="name" required>
-                                    
-                                          <label for="loan-amount">Loan Amount:</label>
 
+                                            <label for="name">Name:</label>
+                                            <div class="name receipt__grid2">
+                                          <input type="text" id="fname" name="fname" required>
+                                          <input type="text" id="lname" name="lname" required>
+                                            </div>
+                                    
+                                          <div class="loan__amount receipt__grid2">
+                                          <label for="loan-amount">Loan Amount:</label>
                                           <div class="range-value">
                                             <span id="loan-amount-value">0</span> USD
                                           </div>
+                                        </div>
 
                                           <input type="range" id="loan-amount" name="loan-amount" min="1000" max="10000" step="100">
                                     
                         
                                           <label for="interest-rate">Interest Rate:</label>
-                                          <input type="text" id="interest-rate" name="interest-rate" required>
+                                          <div class="range-value">
+                                            <span id="loan-rate-value"></span> %
+                                          </div>
                                     
                                           <label for="loan-duration">Loan Duration (months):</label>
                                           <input type="text" id="loan-duration" name="loan-duration" required>

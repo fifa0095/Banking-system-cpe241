@@ -1,0 +1,259 @@
+<!-- 
+<!DOCTYPE html>
+<html>
+	<title>Password Pin Page</title>
+
+<head>
+  <title>Pin Password Page</title>
+  <link rel="stylesheet" type="text/css" > 
+</head>
+<body>
+  <div class="container">
+    <h1>Enter Your Pin</h1>
+    <form>
+      <input type="password" id="pin" maxlength="6" placeholder="_ _ _ _ _ _">
+    </form>
+    <button onclick=" submitPin('paybill_commit.html')">Submit</button>
+    <p id="message" ></p>
+  </div>
+  <script src="Asset/js/main.js"></script>
+</body>
+</html> -->
+
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="asset/css/swiper-bundle.min.css">
+  
+      <!-- css -->
+      <link rel="stylesheet" href="asset/css/style.css">
+      <!-- incon -->
+      <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+      <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+      <!-- ไอคอนบนแท็บ -->
+      <link rel="shortcut icon" href="assets/img/myProfile.png">
+  
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Withdraw Page</title>
+  
+  
+
+  </head>
+    <body>
+          <!--Nav BAR-->
+          <nav>
+            <div class="nav-bar container02">
+                <!--LOGO-->
+                <a href="index.html" class="logo"><img src="Asset/img/Baiplus_final-removebg-preview.png" class="nav__icon" alt="" /></i>BaiPlus</a>
+                <!--Menu Icon-->
+                <input type="checkbox" name="" id="menu">
+                <label for="menu"><i class='bx bx-menu' id="menu-icon" ></i></label>
+                <!--Navlist-->
+                <ul class="navbar">
+                    <li><a href="#home">Home</a></li>
+                    <li class="dropdown-link">
+                        <a href="">Accounts<i class='bx bxs-chevron-down'></i></a>
+                        <ul class="dropdown">
+                            <li><a href="account.html">Profile Accounts</a></li>
+                            <li><a href="complex.html">Anothers Accounts</a></li>   
+                        </ul>
+                    </li>
+                    <li><a href="#sales">Sales</a></li>
+                    <li><a href="#properties">Properties</a></li>
+  
+                </ul>
+                <!--LOGIN BUTTON-->
+                <a href="login.html" class="btn">Log In</a>
+                <div class="nav__btns">
+                  <!-- theme change button -->
+                  <i class="uil uil-moon change-theme" id="theme-button"></i>
+              </div>
+            </div>
+    
+    
+        </nav>
+      <!-- <nav class="nav-bar">
+        <img src="Asset/img/Baiplus_final-removebg-preview.png" class="nav__icon" alt="" />
+        <div class="nav-items">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#">Blog</a>
+          <a href="#">Carriers</a>
+        </div>
+        <button>Request Invite</button>
+      </nav> -->
+  
+      <header class="hero-section">
+        <div class="hero-text-container">
+          <h1>Next generation<br />
+            digital banking</h1 >
+          <p>
+            Take your financial life online. Your easy bank account<br />
+            will be a one-stop-shop for spending,saving,<br />budgeting,investing,
+            and much more.
+            </p>
+          <button>Request Invite</button>
+        </div>
+  
+        <div class="hero-img-container">
+          <img src="Asset/img/Baiplus_final-removebg-preview.png" class="home__icon" alt="" />
+        </div>
+      </header>
+  
+  
+      <section class="about home__container" id="about">
+        <div class="about-img">
+            <img src="4.jpg" alt="">
+        </div>
+        <div class="about-text">
+            <span>About Us</span>
+            <h2>We Provide The Best <br> Property For You!</h2>
+            <p>​​​​​​ธนาคารใบพลัสไทยก่อตั้งเมื่อวันที่ 8 มิถุนายน พ.ศ. 2488 ด้วยทุนจดทะเบียน 5 ล้านบาท โดยมีสาขาสำนักถนนเสือป่าในปัจจุบันเป็นที่ทำการแห่งแรก ซึ่งเริ่มด้วยพนักงานเพียง 21 คน แต่เพียงงวดบัญชีแรกที่สิ้นสุดหรือเพียง 6 เดือน ณ วันที่ 31 ธันวาคม พ.ศ. 2488 ก็มียอดเงินฝากสูงถึง 12 ล้านบาท และมีสินทรัพย์ 15 ล้านบาท
+                
+                ตลอดหลายทศวรรษที่ผ่านมา ธนาคารมุ่งมั่นพัฒนาองค์กรและผลิตภัณฑ์ทางการเงินใหม่อย่างสม่ำเสมอเพื่อให้บริการที่เป็นเลิศ ภายใต้คำขวัญ ​“บริการทุกระดับประทับใจ”</p>
+            
+        </div>
+    </section>
+  
+  
+      <div class="home__containter">
+        <section class="why-us">
+          <h1>Why choose Easybank?</h1>
+          <p
+            >We leverage open banking to turn your bank account into your
+            financial hub.<br />Control your finances like never before.</p
+          >
+        </section>
+        <section class="features-section">
+          <div class="feature-item">
+            <img src="Asset/images/icon-online.svg" alt="" />
+            <h1>Online Banking</h1>
+            <p>Our modern web and mobile
+              applications allow you to keep
+              track of your finances whereever
+              you are in the world.</p>
+          </div>
+          <div class="feature-item">
+            <img src="Asset/images/icon-budgeting.svg" alt="" />
+            <h1>Simple Budgeting</h1>
+            <p>See exactly where your money
+              goes every month.Recieve
+              notifications when you're close to
+              hitting your limits.</p>
+          </div>
+  
+          <div class="feature-item">
+            <img src="Asset/images/icon-onboarding.svg" alt="" />
+            <h1>Fast Onboarding</h1>
+            <p
+              >We don't do branches.Open your
+              accound minutes online and start
+              taking controll of your finances
+              right away.
+            </p>
+          </div>
+          <div class="feature-item">
+            <img src="Asset/images/icon-api.svg" alt="" />
+            <h1>Open API</h1>
+            <p
+              >Manage your savings, investments,
+              pension and much more from one
+              account.Tracking your money has
+              never been easier.</p>
+          </div>
+        </section>
+  
+  
+  
+        <section class="blog-section">
+          <h1>Latest Articles</h1>
+          <div class="article-container">
+            <div class="article">
+              <img src="Asset/images/image-currency.jpg" alt="" />
+              <div class="content">
+                <p>Arslan Jajja</p>
+                <h4>Recieve money in any
+                  currency with no fees.</h4>
+                <p>
+                  The world is getting smaller and
+                  we are becoming more mobile.So,
+                  why should you be forced to only
+                  recieve money in a single...
+                </p>
+              </div>
+            </div>
+            <div class="article">
+              <img src="Asset/images/image-restaurant.jpg" alt="" />
+              <div class="content">
+                <p>Arslan Jajja</p>
+                <h4>Recieve money in any<br />
+                  currency with no fees.</h4>
+                <p>Our simple budgeting feature
+                  allow to seperate out your
+                  spending and set realistic limits
+                  each month.That means you...
+                </p>
+              </div>
+            </div>
+            <div class="article">
+              <img src="Asset/images/image-plane.jpg" alt="" />
+              <div class="content">
+                <p>Arslan Jajja</p>
+                <h4>Take Your Easybank card<br />whereever you go.</h4>
+                <p>We want you to enjoy your travels.This is why we don't
+                  charge anyfees on purchase while you're abroad.We'll
+                  even show you...
+                  </p>
+              </div>
+            </div>
+            <div class="article">
+              <img src="Asset/images/image-confetti.jpg" alt="" />
+              <div class="content">
+                <p>Arslan Jajja</p>
+                <h4>Our invite-only Beta<br />accounts are live now!</h4>
+                <p
+                  >After a lot of hardwork by the<br />
+                  whole team,we're excited to launch<br />
+                  our closed beta.It's easy to request <br />an invite through the
+                  site.</p
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+  
+  
+  
+  
+      
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="social-container">
+            <img src="Asset/images/icon-facebook.svg" alt="" />
+            <img src="Asset/images/icon-instagram.svg" alt="" />
+            <img src="Asset/images/icon-twitter.svg" alt="" />
+            <img src="Asset/images/icon-pinterest.svg" alt="" />
+          </div>
+          <div class="menu">
+            <a href="#">About us</a>
+            <a href="#">Contact us</a>
+            <a href="#">Blog</a>
+          </div>
+          <div class="menu">
+            <a href="#">Carriers</a>
+            <a href="#">Support</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+          <button>Request Invite</button>
+        </div>
+      </footer>
+
+
+</body>
+</html>
