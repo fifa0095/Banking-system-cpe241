@@ -22,8 +22,8 @@
 </head>
   <body>
         <!--Nav BAR-->
-        <nav>
-          <div class="nav-bar container02">
+      <nav>
+        <div class="nav-bar home__containter">
               <!--LOGO-->
               <a href="index.html" class="logo"><img src="Asset/img/Baiplus_final-removebg-preview.png" class="nav__icon" alt="" /></i>BaiPlus</a>
               <!--Menu Icon-->
@@ -42,15 +42,16 @@
                   <li><a href="#sales">Sales</a></li>
                   <li><a href="#properties">Properties</a></li>
 
+                  <li class="nav__btns">           
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+                  </li>
+                      <!--LOGIN BUTTON-->
+                  <div class="home__action">
+                      <a href="login.html" class="btn">Log In</a>
+                      <a href="sign-up.html" class="btn">Sign up</a>
+                  </div>
               </ul>
-              <!--LOGIN BUTTON-->
-              <a href="login.html" class="btn">Log In</a>
-              <div class="nav__btns">
-                <!-- theme change button -->
-                <i class="uil uil-moon change-theme" id="theme-button"></i>
-            </div>
           </div>
-  
   
       </nav>
     <!-- <nav class="nav-bar">
@@ -83,16 +84,14 @@
     </header>
 
 
-    <section class="about home__container" id="about">
-      <div class="about-img">
-          <img src="4.jpg" alt="">
+    <section class="home__about home__container" id="about">
+      <div class="home__aboutus">
+          <img src="Asset/images/image-currency.jpg" class="home__about-img" alt="">
       </div>
-      <div class="about-text">
-          <span>About Us</span>
-          <h2>We Provide The Best <br> Property For You!</h2>
-          <p>​​​​​​ธนาคารใบพลัสไทยก่อตั้งเมื่อวันที่ 8 มิถุนายน พ.ศ. 2488 ด้วยทุนจดทะเบียน 5 ล้านบาท โดยมีสาขาสำนักถนนเสือป่าในปัจจุบันเป็นที่ทำการแห่งแรก ซึ่งเริ่มด้วยพนักงานเพียง 21 คน แต่เพียงงวดบัญชีแรกที่สิ้นสุดหรือเพียง 6 เดือน ณ วันที่ 31 ธันวาคม พ.ศ. 2488 ก็มียอดเงินฝากสูงถึง 12 ล้านบาท และมีสินทรัพย์ 15 ล้านบาท
-              
-              ตลอดหลายทศวรรษที่ผ่านมา ธนาคารมุ่งมั่นพัฒนาองค์กรและผลิตภัณฑ์ทางการเงินใหม่อย่างสม่ำเสมอเพื่อให้บริการที่เป็นเลิศ ภายใต้คำขวัญ ​“บริการทุกระดับประทับใจ”</p>
+      <div class="why-us">
+          <h1>About Us</h1>
+          <!-- <h2 class="section__subtitle">We Provide The Best <br> Property For You!</h2> -->
+          <br>At Baiplus Online Bank, we believe that banking should be simple,convenient, and accessible to everyone. We are committed to providing a seamless online banking experience that empowers individuals to take control of their finances.</p>
           
       </div>
   </section>
@@ -107,52 +106,72 @@
         >
       </section>
 
-      <section class="features-section">
+      <!-- <section class="features-section">
         <div class="box feature-item">
           <img src="Asset/images/icon-online.svg" alt="" />
-          <!-- <i class='bx bx-popsicle' ></i> -->
+     
           <h1>Online Banking</h1>
           <p>Our modern web and mobile
             applications allow you to keep
             track of your finances whereever
             you are in the world.</p>
-        </div>
+        </div> -->
 
-        <section class="sales home__container" id="sales">
+        <section class="features-section  home__container" >
+        <!-- <div class="home__list"> -->
           <!--Box1-->
-          <div class="box">
-              <i class='bx bx-transfer'></i>
-              <h3>Transfer</i></h3>
+          <div class="box feature-item">
+            <img src="Asset/images/icon-online.svg" class="home__feature-item" alt="" />
+            <h1>Online Banking</h1>
+            <p >Our modern web and mobile
+              applications allow you to keep
+              track of your finances whereever
+              you are in the world.</p>
           </div>
       
             <!--Box2-->
-            <div class="box">
-              <i class='bx bx-money-withdraw' ></i>
-              <h3>Withdraw</i></h3>
-              
+
+                        
+          <div class="box feature-item">
+            <img src="Asset/images/icon-budgeting.svg" alt="" />
+            <!-- <i class='bx bx-money-withdraw' ></i> -->
+            <h1>Simple Budgeting</h1>
+            <p
+              >See exactly where your money
+              goes every month.Recieve
+              notifications when you're close to
+              hitting your limits./p >
+            </p>
           </div>
-      
             <!--Box3-->
-            <div class="box">
-              <i class='bx bx-receipt' ></i>
-              <h3>Pay Bill</i></h3>
-              
-          </div>
+             <div class="box feature-item">
+                <img src="Asset/images/icon-onboarding.svg" class="home__feature-item" alt="" />
+                <!-- <i class='bx bx-receipt' ></i>  -->
+                <h1>Fast Onboarding</h1>
+                <p
+                  >We don't do branches.Open your
+                  accound minutes online and start
+                  taking controll of your finances
+                  right away.
+                  </p>
+              </div>
+        
           <!--Box4-->
-          <div class="box">
-              <i class='bx bx-credit-card' ></i>
-              <h3>Credist Card</i></h3>
-              
+      
+          <div class="box feature-item">
+            <img src="Asset/images/icon-api.svg" alt="" />
+            <!-- <i class='bx bx-credit-card' ></i> -->
+            <h1>Open API</h1>
+            <p>
+              Manage your savings, investments,
+              pension and much more from one
+              account.Tracking your money has
+              never been easier.
+              </p>
           </div>
-           <!--Box4-->
-           <div class="box">
-              <i class='bx bx-popsicle' ></i>
-              <h3>Loan</i></h3>
-              
-          </div>
-          
+        <!-- </div> -->
       </section>
-      </section>
+      <!-- </section> -->
 
 
 
