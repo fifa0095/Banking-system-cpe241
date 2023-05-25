@@ -1,0 +1,316 @@
+/*==================== GOOGLE FONTS ====================*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/*==================== VARIABLES CSS ====================*/
+:root {
+    --header-height: 3rem;
+
+    /*========== Colors ==========*/
+    /* Change favorite color */
+    --hue-color: 142; /*purple 250 - green 142 - blue 230 - pink 340*/
+
+    /* HSL color mode */
+    --first-color: hsl(var(--hue-color),  65%, 51%);
+    --first-color-second: hsl(var(--hue-color), 69%, 61%);
+    --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+    --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+    --title-color: hsl(var(--hue-color), 8%, 15%);
+    --text-color: hsl(var(--hue-color), 8%, 25%);
+    --text-color-light: hsl(var(--hue-color), 8%, 55%);
+    --input-color: hsl(var(--hue-color), 10%, 65%);
+    --body-color: hsl(var(--hue-color), 60%, 99%);
+    --container-color: #fff;
+    --container-alter-color:hsl(220, 16%, 96%);
+    --scrolll-bar-color:hsl(var(--hue-color), 12%, 95%);
+    --scrolll-thumb-color:hsl(var(--hue-color), 12%, 80%);
+    /* Box shadow */
+    --box-shadow: 2px 2px 18px rgb(14 52 54 / 30%);
+    
+    /* --first-color-second: hsl(var(--hue-color), 30%, 8%);
+    --title-color: hsl(var(--hue-color), 8%, 95%);
+    --text-color: hsl(var(--hue-color), 8%, 75%);
+    --input-color: hsl(var(--hue-color), 29%, 16%);
+    --body-color: hsl(var(--hue-color), 28%, 12%);
+    --container-color: hsl(var(--hue-color), 29%, 16%);
+    --scrolll-bar-color:hsl(var(--hue-color), 12%, 48%);
+    --scrolll-thumb-color:hsl(var(--hue-color), 12%, 30%); */
+
+     /*========== Font and typography ==========*/
+    /* แบบอักษรและการพิมพ์ */
+    --body-font:'Poppins', sans-serif ;
+
+    /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+    --big-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /*========== Margenes Bottom ==========*/
+    /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
+/*========== Variables Dark theme ==========*/
+body.dark-theme{
+/* 
+    background-color: #333;
+    color: #fff; */
+  --first-color-second: hsl(var(--hue-color), 30%, 50%);
+  --title-color: hsl(var(--hue-color), 8%, 95%);
+  --text-color: hsl(var(--hue-color), 10%, 90%);
+  --input-color: hsl(var(--hue-color), 29%, 9%);
+  --body-color: hsl(var(--hue-color), 28%, 12%);
+  --container-color: hsl(233, 39%, 14%);
+  --container-alter-color:hsl(220,30%, 10%);
+  --scrolll-bar-color:hsl(var(--hue-color), 12%, 48%);
+  --scrolll-thumb-color:hsl(var(--hue-color), 12%, 30%);
+  --box-shadow: 2px 2px 15px #fff;
+}
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+.login__wave{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	z-index: -1;
+	width: auto;
+	
+}
+
+.login__container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap :5rem;
+    padding: 0 2rem;
+	/* border: solid; */
+}
+
+.login__img{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	
+	/* border: solid; */
+}
+
+.login__content{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	/* border: solid; */
+}
+
+.login__container img{
+	width: 500px;
+
+}
+.login__container form{
+	width: 360px;
+}
+
+.login__content img{
+    height: 100px;
+	
+}
+
+.login__content h2{
+	margin: 15px 0;
+	color: var(--text-color);
+	text-transform: uppercase;
+	font-size: 2.9rem;
+}
+
+.login__content .login__input-div{
+	position: relative;
+    display: grid;
+    grid-template-columns: 7% 93%;
+    margin: 25px 0;
+    padding: 5px 0;
+    border-bottom: 3px solid var(--container-alter-color);
+}
+
+.login__content .login__input-div.one{
+	margin-top: 0;
+}
+
+.login__icon{
+	color: var(--input-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.login__icon i{
+	transition: .3s;
+}
+
+.login__input-div > div{
+    position: relative;
+	height: 45px;
+}
+
+.login__input-div > div > h5{
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: var(--input-color);
+	font-size: 18px;
+	transition: .3s;
+}
+
+.login__input-div:before, .login__input-div:after{
+	content: '';
+	position: absolute;
+	bottom: -2px;
+	width: 0%;
+	height: 2px;
+	background-color: var(--first-color);
+	transition: .4s;
+}
+
+.login__input-div:before{
+	right: 50%;
+}
+
+.login__input-div:after{
+	left: 50%;
+}
+
+.login__input-div.focus:before, .login__input-div.focus:after{
+	width: 50%;
+}
+
+.login__input-div.focus > div > h5{
+	top: -5px;
+	font-size: 15px;
+}
+
+.login__input-div .focus > .i > i{
+	color: var(--first-color);
+}
+
+.login__input-div > div > input{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	background: none;
+	padding: 0.5rem 0.7rem;
+	font-size: 1.2rem;
+	color: var(--text-color);
+	font-family:var(--body-font);
+}
+
+.login__input-div .pass{
+	margin-bottom: 4px;
+}
+
+a{
+	display: block;
+	text-align: right;
+	text-decoration: none;
+	color: var(--text-color-light);
+	font-size: 0.9rem;
+	transition: .3s;
+}
+
+
+.login__btn{
+	display: block;
+	width: 100%;
+	height: 50px;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	background-image: linear-gradient(to right,var(--first-color-lighter), var(--first-color), var(--first-color-alt));
+	background-size: 200%;
+	font-size: 1.2rem;
+	color: var(--text-color);
+	font-family: var(--body-font);
+	font-weight: var(--font-semi-bold);
+	text-transform: uppercase;
+	
+	margin: 1rem 0;
+	cursor: pointer;
+	transition: .5s;
+}
+.login__btn:hover{
+	background-position: right;
+	font-size: var(--h2-font-size);
+	color: var(--container-color);
+}
+
+
+@media screen and (max-width: 1050px){
+	.login__container{
+		grid-gap: 5rem;
+	}
+}
+
+@media screen and (max-width: 1000px){
+	form{
+		width: 290px;
+	}
+
+	.login__login-content h2{
+        font-size: 2.4rem;
+        margin: 8px 0;
+	}
+
+	.login__img {
+		width: 400px;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.container{
+		grid-template-columns: 1fr;
+	}
+
+	.img{
+		display: none;
+	}
+
+	.login__wave{
+		display: none;
+	}
+
+	.login__content{
+		justify-content: center;
+	}
+}
