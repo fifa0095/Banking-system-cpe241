@@ -4,102 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="asset/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="Asset/css/swiper-bundle.min.css">
 
     <!-- css -->
-    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="Asset/css/style.css">
     <!-- incon -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css">
-
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <!-- ไอคอนบนแท็บ -->
-    <link rel="shortcut icon" href="assets/img/myProfile.png">
+    <link rel="shortcut icon" href="Asset/img/Baiplus_final-removebg-preview.png">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Select Account Page</title>
+    <title>Home Page</title>
+
+
+    
 </head>
-    <body>
-        <!--==================== HEADER ====================-->
-    <!--  =================== Header ===============  -->
-    <!-- <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo">Tanaton</a>
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list grid">
-
-                    <li class="nav__item ">
-                        <a href="#home" class="nav__link  active-link">
-                            <i class="uil uil-estate nav__icon "></i> Home
-                        </a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link">
-                            <i class="uil uil-user nav__icon"></i> About
-                        </a>
-                    </li>
-                    
-                    <li class="nav__item">
-                        <a href="#skills" class="nav__link">
-                            <i class="uil uil-file-alt nav__icon"></i> Skill
-                        </a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#services" class="nav__link">
-                            <i class="uil uil-briefcase-alt nav__icon"></i> Services
-                        </a>
-                    </li>
-
-                    
-                    <li class="nav__item">
-                        <a href="#portfolio" class="nav__link">
-                            <i class="uil uil-scenery nav__icon"></i> Portfoilo
-                        </a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link">
-                            <i class="uil uil-message nav__icon"></i> Contact me
-                        </a>
-                    </li>
+    <script src="Asset/js/main.js"></script>
+    <script src="Asset/js/darkmode.js"></script>
+  <body>
+        <!--Nav BAR-->
+      <nav>
+        <div class="nav-bar home__containter header" >
+              <!--LOGO-->
+              <a href="index.html" class="logo"><img src="Asset/img/Baiplus_final-removebg-preview.png" class="nav__icon" alt="" /></i>BaiPlus</a>
+              <!--Menu Icon-->
+              <input type="checkbox" name="" id="menu">
+              <label for="menu"><i class='bx bx-menu' id="menu-icon" ></i></label>
+              <!--Navlist-->
+              <ul class="navbar">
+                  <li><a href="account__main.html">Home</a></li>
+                  <li class="home__dropdown-link">
+                      <div href="">ACCOUNTS&nbsp;&nbsp;<i class='bx bxs-chevron-down'></i></div>
+                      <ul class="home__dropdown" >
+                          <li><a href="account.html" >Profile Accounts</a></li>
+                          <li><a href="complex.html" >Anothers Accounts</a></li>   
+                      </ul>
+                  </li>
+                  <li class="home__dropdown-link">
+                    <div href="">TRANSACTION&nbsp;&nbsp;<i class='bx bxs-chevron-down'></i></div>
+                    <ul class="home__dropdown" >
+                        <li><a href="tranfer_selectBank.html" >Tranfer</a></li>
+                        <li><a href="paybill.html" >Pay Bill</a></li>
+                        <li><a href="withdraw.html" >Withdraw</a></li> 
+                        <li><a href="loan.html" >Loan</a></li>    
+                    </ul>
+                </li>
+                  <li><a href="card">CRADITCARD</a></li>
 
 
-                </ul>
-                <i class="uil uil-times nav__close" id="nav-close"></i>
-            </div>
-
-
-            <div class="nav__btns">
-                theme change button -->
-                <!-- <i class="uil uil-moon change-theme" id="theme-button"></i>
-                toggle = สลับ -->
-                <!-- <div class="nav__toggle" id="nav-toggle">
-                    <i class="uil uil-apps"></i>
-                </div>
-            </div>
-
-        </nav>
-
-    </header> -->
-    <header class="header" id="header">
-        <div class="nav container02">
-            <!--LOGO-->
-            <a href="index.html" class="logo"><i class='bx bx-home'></i>Baiplus</a>
-            <!--Menu Icon-->
-            <input type="checkbox" name="" id="menu">
-            <label for="menu"><i class='bx bx-menu' id="menu-icon" ></i></label>
-            <!--Navlist-->
-            <ul class="navbar">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#sales">Sales</a></li>
-                <li><a href="#properties">Properties</a></li>
-            </ul>
-            <!--LOGIN BUTTON-->
-            <a href="login.html" class="btn">Log In</a>
-        </div>
-</header>
+                  <li class="nav__btns">           
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+                  </li>
+    
+                  <li class="home__dropdown-link">
+                    <div class="nav__acc-bg">
+                        <div class="nav__img"><img src="Asset/img/avatar.svg"></div>
+                    </div>
+                    <ul class="home__dropdown" >
+                        <li><a href="account.html">Setting</a></li>
+                        <li><a href="complex.html">Anothers</a></li>
+                        <li><a href="ff-index.html">Log Out</a></li>
+                    </ul>
+                  </li>
+              </ul>
+          </div>
+      </nav>
         <!--==================== MAIN ====================-->
         <main class="main">
 

@@ -12,10 +12,10 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <!-- ไอคอนบนแท็บ -->
-    <link rel="shortcut icon" href="assets/img/myProfile.png">
+    <link rel="shortcut icon" href="Asset/img/Baiplus_final-removebg-preview.png">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home Page</title>
+    <title>BAIPLUS BANK</title>
 
 
     
@@ -39,16 +39,24 @@
                           <li><a href="complex.html" >Anothers Accounts</a></li>   
                       </ul>
                   </li>
-                  <li><a href="#sales">Sales</a></li>
-                  <li><a href="#properties">Properties</a></li>
+                  <li class="home__dropdown-link">
+                    <div href="">TRANSACTION&nbsp;&nbsp;<i class='bx bxs-chevron-down'></i></div>
+                    <ul class="home__dropdown" >
+                        <li><a href="tranfer_selectBank.html" >Tranfer</a></li>
+                        <li><a href="paybill.html" >Pay Bill</a></li>
+                        <li><a href="withdraw.html" >Withdraw</a></li> 
+                        <li><a href="loan.html" >Loan</a></li>    
+                    </ul>
+                </li>
+                  <li><a href="card">CRADITCARD</a></li>
 
                   <li class="nav__btns">           
                     <i class="uil uil-moon change-theme" id="theme-button"></i>
                   </li>
                       <!--LOGIN BUTTON-->
                   <div class="home__action">
-                      <a href="login.html" class="btn">Log In</a>
-                      <a href="sign-up.html" class="btn">Sign up</a>
+                      <a href="log-in.html" class="nav__btn">Log In</a>
+                      <a href="sign-up.html" class="nav__btn">Sign up</a>
                   </div>
               </ul>
           </div>
@@ -75,7 +83,7 @@
           will be a one-stop-shop for spending,saving,<br />budgeting,investing,
           and much more.
           </p>
-        <button>Request Invite</button>
+        <a class="nav__btn">Sign up</a>
       </div>
 
       <div class="hero-img-container">
@@ -89,9 +97,9 @@
           <img src="Asset/images/image-currency.jpg" class="home__about-img" alt="">
       </div>
       <div class="why-us">
-          <h1>About Us</h1>
+          <h1>Welcome to Baiplus Online Bank!</h1>
           <!-- <h2 class="section__subtitle">We Provide The Best <br> Property For You!</h2> -->
-          <br>At Baiplus Online Bank, we believe that banking should be simple,convenient, and accessible to everyone. We are committed to providing a seamless online banking experience that empowers individuals to take control of their finances.</p>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At Baiplus Online Bank, we believe that banking should be simple,convenient, and accessible to everyone. We are committed to providing a seamless online banking experience that empowers individuals to take control of their finances.</p>
           
       </div>
   </section>
@@ -123,21 +131,23 @@
           <div class="box feature-item">
             <img src="Asset/images/icon-online.svg" class="home__feature-img" alt="" />
             <h1>Online Banking</h1>
-            <p >Our modern web and mobile
-              applications allow you to keep
+            <p>
+              Our modern web 
+               allow you to keep
               track of your finances whereever
-              you are in the world.</p>
+              you are in the world.
+            </p>
           </div>
       
             <!--Box2-->
 
                         
           <div class="box feature-item">
-            <img src="Asset/images/icon-budgeting.svg" class="ome__feature-img" alt="" />
+            <img src="Asset/images/icon-budgeting.svg" class="home__feature-img" alt="" />
             <!-- <i class='bx bx-money-withdraw' ></i> -->
             <h1>Simple Budgeting</h1>
-            <p
-              >See exactly where your money
+            <p>
+              See exactly where your money
               goes every month.Recieve
               notifications when you're close to
               hitting your limits.
@@ -148,9 +158,8 @@
                 <img src="Asset/images/icon-onboarding.svg" class="home__feature-img" alt="" />
                 <!-- <i class='bx bx-receipt' ></i>  -->
                 <h1>Fast Onboarding</h1>
-                <p
-                  >We don't do branches.Open your
-                  accound minutes online and start
+                <p>
+                  Open your accound minutes online and start
                   taking controll of your finances
                   right away.
                   </p>
@@ -165,7 +174,7 @@
             <p>
               Manage your savings, investments,
               pension and much more from one
-              account.Tracking your money has
+              account or more accounts.Tracking your money has
               never been easier.
               </p>
           </div>
@@ -174,7 +183,7 @@
       <!-- </section> -->
 
 
-
+<!-- 
       <section class="blog-section home__containter">
         <h1 >Latest Articles</h1>
         <div class="article-container">
@@ -230,34 +239,85 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </div>
 
 
 
+<!--==================== FOOTER ====================-->
+<footer class="footer">
+  <div class="footer__bg ">
+      <div class="footer__container grid">
+          <div>
+              <h1 class="footer__title">BAIPLUS BANKING WEBSITE</h1>
+              <span class="footer__subtitle">Open your accound minutes online and start
+                taking controll of your finances
+                right away.</span>
+          </div>
+          <!-- <ul class="footer__links">
+              <li>
+                  <a href="#services" class="footer__link">Services</a>
+              </li>
+              <li>
+                  <a href="#portfolio" class="footer__link">Portfolio</a>
+              </li>
+              <li>
+                  <a href="#contact" class="footer__link">ContactMe</a>
+              </li>
+          </ul>
+          <div class="footer__socials">
 
+            <a href="#" class="footer__social">
+                <i class="uil uil-facebook-f button__icon"></i>
+            </a>
     
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="social-container">
-          <img src="Asset/images/icon-facebook.svg" alt="" />
-          <img src="Asset/images/icon-instagram.svg" alt="" />
-          <img src="Asset/images/icon-twitter.svg" alt="" />
-          <img src="Asset/images/icon-pinterest.svg" alt="" />
-        </div>
-        <div class="menu">
-          <a href="#">About us</a>
-          <a href="#">Contact us</a>
-          <a href="#">Blog</a>
-        </div>
-        <div class="menu">
-          <a href="#">Carriers</a>
-          <a href="#">Support</a>
-          <a href="#">Privacy Policy</a>
-        </div>
-        <button>Request Invite</button>
+            <a href="#" class="footer__social button__icon ">
+                <i class="uil uil-instagram"></i>
+            </a>
+    
+            <a href="#" class="footer__social button__icon">
+                <i class="uil uil-line"></i>
+            </a>
+        </div> -->
+        <!-- <p class="footer__copy">&#169; Bedimcode. All right reserved</p> -->
       </div>
-    </footer>
+      
+      <div class="footer__container grid">
+        <!-- <div>
+            <h1 class="footer__title">BAIPLUS BANKING WEBSITE</h1>
+            <span class="footer__subtitle">Open your accound minutes online and start
+              taking controll of your finances
+              right away.</span>
+        </div> -->
+        <!-- <ul class="footer__links">
+            <li>
+                <a href="#services" class="footer__link">Services</a>
+            </li>
+            <li>
+                <a href="#portfolio" class="footer__link">Portfolio</a>
+            </li>
+            <li>
+                <a href="#contact" class="footer__link">ContactMe</a>
+            </li>
+        </ul> -->
+        <div class="footer__socials">
+<!-- 
+          <a href="#" class="footer__social">
+              <i class="uil uil-facebook-f button__icon"></i>
+          </a>
+  
+          <a href="#" class="footer__social button__icon ">
+              <i class="uil uil-instagram"></i>
+          </a>
+  
+          <a href="#" class="footer__social button__icon">
+              <i class="uil uil-line"></i>
+          </a> -->
+    
+    </div>
+    <p class="footer__copy">&#169;Baipuls Bank. All right reserved</p>
+  </div>
+</footer>
     <script src="Asset/js/main.js"></script>
     <script>document.addEventListener('DOMContentLoaded', () => {
       const themeButton = document.getElementById('theme-button');
