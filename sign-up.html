@@ -4,34 +4,216 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sing Up</title>
-    <link rel="stylesheet" href="Asset/css/style02.css">
-    <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Asset/css/swiper-bundle.min.css">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="Asset/css/style.css">
+    <!-- incon -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/solid.css">
+    <!-- ไอคอนบนแท็บ -->
+    <link rel="shortcut icon" href="assets/img/myProfile.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <!--Nav BAR-->
-    <header>
-        <div class="nav container">
-            <!--LOGO-->
-            <a href="index.html" class="logo"><i class='bx bx-home'></i>BaiPlus</a>
-        
-            <!--LOGIN BUTTON-->
-            <a href="login.html" class="btn">Log In</a>
+
+
+
+	<nav>
+        <div class="nav-bar home__containter">
+           
+              <a href="index.html" class="logo"><img src="Asset/img/Baiplus_final-removebg-preview.png" class="nav__icon" alt="" /></i>BaiPlus</a>
+           
+              <input type="checkbox" name="" id="menu">
+              <label for="menu"><i class='bx bx-menu' id="menu-icon" ></i></label>
+    
+              <ul class="navbar">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="index.html">ABOUT</a></li>
+                 
+
+                  <li class="nav__btns">           
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+                  </li>
+                
+                  <div class="home__action">
+                      <!-- <a href="log-in.html" class="nav__btn">Log In</a> -->
+                      <a href="log-in.html" class="nav__btn">Log in</a>
+                  </div>
+              </ul>
+          </div>
+
+      </nav>
+
+
+
+
+	<img class="signup__img" src="Asset/img/tree.Brabch.svg">
+	<div class="login__container">
+		<div class="signup__img-2">
+			<img src="Asset/img/tree.Brabch.svg">
+		</div>
+		<div class="login-content">
+			<form action="index.html" class="signup__form">
+				<!-- <img src="Asset/img/avatar.svg"> -->
+				<h2 class="section__title">Welcome , Lets get started</h2>
+            <div class="section__subtitle signup__grid2">
+                <p>Already have account ?</p><a href="log-in.html" class="signup__btn-link"> Log In</a>
+            </div>
+                <div class="signup__grid2">
+                <!-- =============== input 1 =================== -->
+                <div class="signup__grid-box1">
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5>Firstname</h5>
+           		   		<input type="text" class="login__input" name="fname">
+           		   </div>
+           		</div><!-- signup__grid-box -->
+                </div>
+                 <!-- =============== input 1 =================== -->
+                <div class="signup__grid-box2">
+                    <div class="input-div pass ">
+                        <div class="i"> 
+                                <!-- <i class="fas fa-lock"></i> -->
+                        </div>
+                    <div class="div">
+                        <h5>Lastname</h5>
+                        <input type="text" class="login__input" name="lname">
+                    </div>
+                </div>
+                </div><!-- signup__grid-box -->
+                </div><!-- signup__name -->
+
+                <!-- =============== input 1 =================== -->
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fa-sharp fa-solid fa-envelope"></i>
+                    
+                    </div>
+                    <div class="div">
+                            <h5>Email</h5>
+                            <input type="email" name="" class="login__input" id="" required>
+                    </div>
+                 </div>
+                 <!-- =============== input 1 =================== -->
+                 <div class="input-div pass">
+                    <div class="i"> 
+                        <i class="fa-sharp fa-solid fa-phone"></i>
+                    </div>
+                    <div class="div">
+                         <h5>Phone number</h5>
+                         <input type="tel" name="" id="" class="login__input" required>
+                 </div>
+              </div>
+            	
+
+              <br> <!-- =============== input 1 =================== -->
+              <div class="input-div one">
+                  <div class="i">
+                    <i class="fas fa-lock"></i> 
+                  </div>
+                  <div class="div">
+                          <h5>Password</h5>
+                          <input type="password" name="" class="login__input" id="" required>
+                  </div>
+               </div>
+               <!-- =============== input 1 =================== -->
+               <div class="input-div pass">
+                <div class="i"> 
+                    <i class="fas fa-lock"></i> 
+                </div>
+                <div class="div">
+                     <h5>Password againt</h5>
+                     <input type="password" name="" id="" class="login__input" required>
+             </div>
+          </div>
+            
+            <br> <!-- =============== input 1 =================== -->
+            <div class="input-div one">
+                <div class="i">
+                    <i class="fa-sharp fa-solid fa-id-card"></i>
+                </div>
+                <div class="div">
+                    <h5>Personal ID</h5>
+                    <input type="text" class="login__input" required>
+                </div>
+             </div>
+             <!-- =============== input 1 =================== -->
+             <div class="input-div pass">
+                <div class="i"> 
+                    <i class="uis uis-calender"></i>
+                </div>
+                <div class="div">
+                     <!-- <h5 >Date of Brith</h5> -->
+                     <input type="date" class="login__input" name="" id="" required>
+             </div>
+          </div>
+
+          <br> <!-- =============== input pin =================== -->
+          <div class="input-div one">
+            <div class="i">
+                <i class="fa-sharp fa-solid fa-key"></i>
+            </div>
+            <div class="div">
+                    <h5>Pin</h5>
+                    <input type="password" name=""maxlength="6"  class="login__input" id="" required>
+            </div>
+         </div>
+           <!-- =============== input pin2 =================== -->
+           <div class="input-div pass">
+            <div class="i"> 
+                <i class="fa-sharp fa-solid fa-key"></i>
+            </div>
+            <div class="div">
+                 <h5>Pin againt</h5>
+                 <input type="password" maxlength="6"  class="login__input"  required>
+         </div>
+      </div>
+
+      
+
+      <br> <!-- =============== input salary =================== -->
+      <div class="input-div one">
+        <div class="i">
+            <i class="fa-sharp fa-solid fa-hand-holding-dollar"></i>
         </div>
+        <div class="div">
+                <h5>Salary</h5>
+                <input type="password" name=""class="login__input" id="" required>
+        </div>
+     </div>
+       <!-- =============== input salary file =================== -->
+       <div class="input-div pass">
+        <div class="i"> 
+            <i class="fa-sharp fa-solid fa-file-invoice-dollar"></i>
+        </div>
+        <div class="div ">
+             <h5>Salary file</h5>
+             <input type="file"  class="login__input" required>
+     </div>
+  </div>
 
 
-    </header>
-    <!-- LO GIN-->
-    <div class="login container">
-        <div class="login-container">
-            <h2>Welcome , Lets get started</h2>
-            <p>Already have account ?<a href="login.html"> Log In</a></p>
+            	<input type="submit" class="login__btn" value="Sign up">
+                <div class="info"> OR </div>
+
+                
+                    <a href="log-in.html" class="signup__btn" value="log in">log in</a>
+                
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="Asset/js/login.js"></script>
+</body>
+</html>
             <!-- Login form-->
-            <form action="">
+            <!-- <form action="">
                 <div class="name">
                     <div>
                     <span>First Name</span>
@@ -66,10 +248,10 @@
                 <input type="text" placeholder="Enter you city" required>
                 <input type="text" placeholder="Enter you districtl" required>
                 <input type="text" placeholder="Enter postal code" required>
-                <!-- <span>ID Card (front)</span>
+                <span>ID Card (front)</span>
                 <input type="text" placeholder="Enter your id card" required>
                 <span>ID Card (back)</span>
-                <input type="text" placeholder="Enter your id card" required> -->
+                <input type="text" placeholder="Enter your id card" required>
                 <span>PIN</span>
                 <input type="text" placeholder="Enter PIN" required>
                 <span>PIN Againt</span>
@@ -82,20 +264,4 @@
                 
                 <a href="login.html">Already have account</a>
                 
-             </form>
-             <a href="login.html" class="btn login-page-signup">Log In</a>
-        </div>
-
-
-
-        <!--Log In Image-->
-        <div class="login-image">
-            <img src="2.png">
-        </div>
-    </div>
-        
-        
-        
-    </section>
-</body>
-</html>
+             </form> -->

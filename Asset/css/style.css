@@ -762,7 +762,54 @@ a:hover{
 	font-size: var(--h2-font-size);
 	font-weight: var(--font-semi-bold);
 }
+/* ============================= Sign Up ======================= */
+.signup__img{
+    position: absolute;
+	bottom: -2;
+	left: 0;
+	/* height: 100%; */
+	z-index: -1;
+    width: 1200px;
+    height: auto;
+}
+.signup__img-2{
+    /* position: fixed; */
+    left: -5;
+    z-index: -2;
+    width: 500;
+    height: auto;
+}
+.signup__btn-link{
+    padding: 8px 22px;
+    background-color: var(--first-color);
+    color: var(--container-color);
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+    border-radius: 5rem;
+    width: 40%;
+    text-align: center;
+        /* border-radius: 50%; */
+}
+.signup__btn-link:hover{
+    background: var(--input-color);
+    color: var(--text-color);
+}
+.signup__grid2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: var(--mb-1);
+    /* border: #7d2ae8 solid; */
+    align-items: center;
+}
+.signup__form{
+    width: 1000px;
+    /* border: #7d2ae8 solid; */
+}
 
+.signup__grid-box2{
+    padding-bottom: 2.8rem;
+    /* border: saddlebrown solid; */
+}
 /* /*============================= home ======================== */
 .home{
     margin-top: 5rem;
