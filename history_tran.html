@@ -20,6 +20,7 @@
 
     
 </head>
+<!--==================== MAIN JS ====================-->
     <script src="Asset/js/main.js"></script>
     <script src="Asset/js/darkmode.js"></script>
   <body>
@@ -50,7 +51,6 @@
                         <li><a href="loan.html" >Loan</a></li>    
                     </ul>
                 </li>
-                <li><a href="history_tran.html">HISTORY</a></li>
                   <li><a href="card">CRADITCARD</a></li>
 
 
@@ -71,72 +71,49 @@
               </ul>
           </div>
       </nav>
+
         <!--==================== MAIN ====================-->
         <main class="main">
 
-            <!--==================== PAY BILL ====================-->
-            <section class="tranfer section" id="">
-                <div class="withdraw__container grid container">
-                <h2 class="section__title">Tranfer</h2>
-                <span class="section__subtitle">Lorem ipsum dolor sit amet.</span>
-                
-                <div class="withdraw__mainacc grid">
-                    <div class="subtitle">Account</div>
-                    <div class="withdraw__box-acc ">
-                        <img src="asset/img/account001.jpg" alt="" class="withdraw__img">
-                        <div class="withdraw__data grid">
-                        <div class=" info__id">
-                            <i class="uil uil-university info icon"></i>
-                            <select name="account__id" id="account__id" class="withdraw__account info">
-                                <i class="uil uil-university info icon"></i>
-                                <option value="001">xxx-x-x0572-x</option>
-                                <option value="001">xxx-x-x0856-x</option>
-                                <option value="001">xxx-x-x4537-x</option>
-                                <option value="001">xxx-x-x8772-x</option>                    
-                              </select>
+            <!--==================== HOME ====================-->
+                <section class="his__section section" id="select">
+                    <h2 class="section__title">History</h2>
+                    <span class="section__subtitle">Lorem ipsum dolor sit amet.</span>
+                <div class="his__bg">
+                    <div  class="grid his__container">
+
+                        <div class="his__box " value="">
+                            <div class="info his__box-data">Tranferor</div>
+                            <div class="info his__box-data">Reciper</div>
+                            <div class="info his__box-data">Type</div>
+                            <div class="info his__box-data">Amount</div>
+                            <div class="info his__box-data">Date & Time</div>
                         </div>
-                        <div class="info info__name">Phongprawi Rattanasri</div>
-                        <div class="info info__money-amount">2,340,453.01</div>
-                    </div>
-                    </div>
 
-                    
-
-                    <div class="subtitle label ">To :</div>
-                    <button class="pay__box grid" value="">
-                        <div class="pay__box-img">
-                        <img src="asset/img/ais.png" alt="" class="pay__img ">
+                        <!-- ============= 1 Transaction ========== -->
+                        <div class="his__box " value="">
+                            <div class="info his__box-data">Jedsada S</div>
+                            <div class="info his__box-data">Phongprawi</div>
+                            <div class="info his__box-data">Tranfer</div>
+                            <div class="info his__box-data">2,000</div>
+                            <div class="info his__box-data">2023.05.26 01.32 A.M.</div>
                         </div>
-                        <div class="info pay__box-label">AIS / Month</div>
-                        <!-- <div class="info select__bank">AIS / Month</div> -->
-                    </button>
-                    
 
-                    
-                    <div class="subtitle label">Bill Number</div>
-                    <div class="select__container container ">
-                            <p class=" select__input info"id="" name="bill_tag" >12-235468-52
+
+                         <!-- ============= 2 Transaction ========== -->
+                        <div class="his__box " value="">
+                            <div class="info his__box-data">Jedsada S</div>
+                            <div class="info his__box-data">Phongprawi</div>
+                            <div class="info his__box-data">Tranfer</div>
+                            <div class="info his__box-data">100</div>
+                            <div class="info his__box-data">2023.05.26 01.32 A.M.</div>
+                        </div>
+
+
+
                     </div>
-                    
-                    <div class="subtitle label">Amount</div>
-                    <div class="select__container container ">
-                        <p class=" select__input info"id="" name="bill_tag" > 1,520.84 Bath
-                    </div>
-                                        
-                    <div class="subtitle label">Note</div>
-                    <div class="select__container container ">
-                            <textarea class=" select__input info" type="" id="" name="tranfer_amount" placeholder="For Demacia"></textarea>
-                    </div>
-                
-                    
-    
-                    <form class="" action="paybill_code.html">
-                        <!-- <label for="" class="button__content"> -->
-                            <button class="button__summit info" name="INSERT" type="submit" id="INSERT" value="INSERT">COMMIT</button>
-                        <!-- </label> -->
-                    </form>
                 </div>
-            </div>
+
                 
             </section>
 
@@ -153,7 +130,7 @@
         <!--==================== SWIPER JS ====================-->
         <script src=""></script>
 
-        <!--==================== MAIN JS ====================-->
-        <script src="asset/js/main.js"></script>
+    
+    
     </body>
 </html>
