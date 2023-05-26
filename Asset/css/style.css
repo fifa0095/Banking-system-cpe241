@@ -782,6 +782,17 @@ a:hover{
     width: 500;
     height: auto;
 }
+.signup__gender{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+.signup__topic{
+    margin-bottom: 1rem;
+}
+.signup__gender-box{
+    font-size: var(--normal-font-size);
+}
 .signup__btn-link{
     padding: 8px 22px;
     background-color: var(--first-color);
@@ -967,6 +978,8 @@ a:hover{
 #withdraw{
     display: flex;
     align-self: center;
+    justify-content: space-around;
+    /* border: #7d2ae8 solid; */
 }
 .withdraw__box-acc{
     border-radius: 10%;
@@ -974,33 +987,43 @@ a:hover{
     background-color: var(--container-color);
     padding:.5rem .25rem;
     border-radius: .25rem;
-    box-shadow: var(--box-shadow);
-    /* transition: .3s; */
+    border: var(--first-color-second) outset 5px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    /* align-content: center; */
-    /* border: solid black 1px; */
-    /* justify-items: center; */
-    
+}
+
+.withdraw__box-money{
+    border-radius: 10%;
+    margin: .25rem .5rem .25rem .5rem;
+    background-color: var(--container-color);
+    padding:.5rem .25rem;
+    border-radius: .25rem;
+    border: var(--first-color-second) outset 5px;
+    display: flex;
+    justify-content: space-evenly;
 }
 .withdraw__data{
     /* border: 2px solid black; */
     grid-template-rows: repeat(3,1fr);
     gap: 0.5rem ;
+    
 }
 
 .withdraw__box-input{
     grid-template-rows: repeat(2,1fr);
+    
 }
 .withdraw__container{
     
-    /* border: solid var(--first-color-alt) .25rem; */
-    width: 50%;
-    margin-left: 25%;
-    border: solid 3px var(--first-color);
+    width: 70%;
+    border: outset 6px var(--first-color-second);
     margin-top: var(--mb-0-25);
+    box-shadow: var(--box-shadow);
     border-radius: 0.25rem;
     padding: .75rem 1rem 0.75rem;
+    background-color: var(--container-color);
+    z-index: 1;
+    
 }
 .withdraw__account:hover
 ,.withdraw__phone-box:hover
@@ -1124,7 +1147,7 @@ a:hover{
         grid-template-rows: repeat(2,1fr);
         gap: 0.5rem;
 }
-    
+
 .withdraw__amount{
     /* grid-template-columns: repeat(2,1fr); */
     width: 100%;
@@ -1915,12 +1938,22 @@ a:hover{
    }
    .test-img{
     position: absolute;
-	/* bottom: -2; */
-	left: 0;
+	bottom: -1;
+    right: 5;
 	height:auto;
     width: 1000px;
-	z-index: -10;
+	z-index: -1;
    }
+   .test-img2{
+    position: absolute;
+	bottom: 2rem;
+    left: 25rem;
+    transform: rotate(-180deg);
+	height:auto;
+    width: 200px;
+	z-index: -2;
+   }
+   
    /* ============================ PIN =================== */
    .pin-display{
     margin-top:var(--mb-1-5);

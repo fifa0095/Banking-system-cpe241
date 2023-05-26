@@ -14,7 +14,7 @@
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/solid.css">
     <!-- ไอคอนบนแท็บ -->
-    <link rel="shortcut icon" href="assets/img/myProfile.png">
+    <link rel="shortcut icon" href="Asset/img/Baiplus_final-removebg-preview.png">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -126,11 +126,11 @@
                <!-- =============== input 1 =================== -->
                <div class="input-div pass">
                 <div class="i"> 
-                    <i class="fas fa-lock"></i> 
+                    <i class="fa-sharp fa-solid fa-id-card"></i> 
                 </div>
                 <div class="div">
-                     <h5>Password againt</h5>
-                     <input type="password" name="" id="" class="login__input" required>
+                     <h5>Personal ID</h5>
+                     <input type="text" name="" id="" class="login__input" required>
              </div>
           </div>
             
@@ -140,20 +140,34 @@
                     <i class="fa-sharp fa-solid fa-id-card"></i>
                 </div>
                 <div class="div">
-                    <h5>Personal ID</h5>
+                    <h5>Personal ID (Back)</h5>
                     <input type="text" class="login__input" required>
                 </div>
              </div>
-             <!-- =============== input 1 =================== -->
-             <div class="input-div pass">
-                <div class="i"> 
-                    <i class="uis uis-calender"></i>
-                </div>
-                <div class="div">
-                     <!-- <h5 >Date of Brith</h5> -->
-                     <input type="date" class="login__input" name="" id="" required>
-             </div>
-          </div>
+
+
+
+          <!-- =============== input pin =================== -->
+          <div class="input-div one">
+            <div class="i">
+                <i class="fa-sharp fa-solid fa-map-location-dot"></i>
+            </div>
+            <div class="div">
+                    <h5>Address</h5>
+                    <input type="text" name="" class="login__input" id="" required>
+            </div>
+         </div>
+           <!-- =============== input pin2 =================== -->
+           <div class="input-div pass">
+            <div class="i"> 
+                <i class="fa-sharp fa-solid fa-signs-post"></i>
+            </div>
+            <div class="div">
+                 <h5>Post code</h5>
+                 <input type="tel" maxlength="5"  class="login__input"  required>
+         </div>
+      </div>
+
 
           <br> <!-- =============== input pin =================== -->
           <div class="input-div one">
@@ -165,18 +179,25 @@
                     <input type="password" name=""maxlength="6"  class="login__input" id="" required>
             </div>
          </div>
-           <!-- =============== input pin2 =================== -->
-           <div class="input-div pass">
-            <div class="i"> 
-                <i class="fa-sharp fa-solid fa-key"></i>
-            </div>
-            <div class="div">
-                 <h5>Pin againt</h5>
-                 <input type="password" maxlength="6"  class="login__input"  required>
-         </div>
-      </div>
+<br>
 
       
+      <fieldset class="gender-box">
+        <h3 class="signup__topic">Gender</h3>
+        <div class="signup__gender">
+        <div class="signup__gender-box">
+          <input type="radio" id="male" name="male" value="male"
+                 checked>
+          <label for="male">Male</label>
+        </div>
+    
+        <div class="signup__gender-box">
+          <input type="radio" id="female" name="female" value="female">
+          <label for="female">Female</label>
+        </div>
+    
+        </div>
+    </fieldset>
 
       <br> <!-- =============== input salary =================== -->
       <div class="input-div one">
@@ -201,10 +222,10 @@
 
 
             	<input type="submit" class="login__btn" value="Sign up">
-                <div class="info"> OR </div>
+                <!-- <div class="info"> OR </div>
 
                 
-                    <a href="log-in.html" class="signup__btn" value="log in">log in</a>
+                    <a href="log-in.html" class="signup__btn" value="log in">log in</a> -->
                 
             </form>
         </div>
