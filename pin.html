@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Asset/css/swiper-bundle.min.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="Asset/css/style.css">
+    <!-- incon -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- ไอคอนบนแท็บ -->
+    <link rel="shortcut icon" href="Asset/img/Baiplus_final-removebg-preview.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Page</title>
+
+
+    
+</head>
+    <script src="Asset/js/main.js"></script>
+    <script src="Asset/js/darkmode.js"></script>
+  <body>
+        <!--Nav BAR-->
+      <nav>
+        <div class="nav-bar home__containter header" >
+              <!--LOGO-->
+              <a href="account__main.html" class="logo"><img src="Asset/img/Baiplus_final-removebg-preview.png" class="nav__icon" alt="" /></i>BaiPlus</a>
+              <!--Menu Icon-->
+              <input type="checkbox" name="" id="menu">
+              <label for="menu"><i class='bx bx-menu' id="menu-icon" ></i></label>
+              <!--Navlist-->
+              <ul class="navbar">
+                  <li><a href="account__main.html">Home</a></li>
+                  <li class="home__dropdown-link">
+                    <div href="">TRANSACTION&nbsp;&nbsp;<i class='bx bxs-chevron-down'></i></div>
+                    <ul class="home__dropdown" >
+                        <li><a href="tranfer_selectBank.html" >Tranfer</a></li>
+                        <li><a href="paybill.html" >Pay Bill</a></li>
+                        <li><a href="withdraw.html" >Withdraw</a></li> 
+                        <li><a href="loan.html" >Loan</a></li>    
+                    </ul>
+                </li>
+                  <li><a href="history_tran.html">HISTORY</a></li>
+                  <li><a href="card">CRADITCARD</a></li>
+
+
+                  <li class="nav__btns">           
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+                  </li>
+    
+                  <li class="home__dropdown-link">
+                    <div class="nav__acc-bg">
+                        <div class="nav__img"><img src="Asset/img/avatar.svg"></div>
+                    </div>
+                    <ul class="home__dropdown" >
+                        <li><a href="account.html">Setting</a></li>
+                        <li><a href="complex.html">Anothers</a></li>
+                        <li><a href="index.html">Log Out</a></li>
+                    </ul>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+        <!--==================== MAIN ====================-->
+        <main class="main">
+
+            <!--==================== HOME ====================-->
+            <section class="withdraw section" id="withdraw">
+                <div class="withdraw__container grid container">
+             
+                    <div class="container">
+                        <h2>Enter your PIN</h2>
+                        <div class="pin__action">
+                          <div class="pin__inputs">
+                            <button type="button" class="pin-button" value="1">1</button>
+                            <button type="button" class="pin-button">2</button>
+                            <button type="button" class="pin-button">3</button>
+                            <button type="button" class="pin-button">4</button>
+                            <button type="button" class="pin-button">5</button>
+                            <button type="button" class="pin-button">6</button>
+                            <button type="button" class="pin-button">7</button>
+                            <button type="button" class="pin-button">8</button>
+                            <button type="button" class="pin-button">9</button>
+                            <button type="button" class="clear-button">Clear</button>
+                            <button type="button" class="pin-button">0</button>
+                            <button type="button" class="submit-button" onclick="submitPin()">Submit</button>
+                          </div>
+                          <input type="text" id="pin-input" class="pin-input">
+                        </div>
+                        <p id="message"></p>
+
+      
+
+                </div>
+            </div>
+                
+            </section>
+
+
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+         
+        </footer>
+        
+        
+
+        <!--==================== SWIPER JS ====================-->
+        <script src=""></script>
+
+        <!--==================== MAIN JS ====================-->
+        <script src="Asset/js/script.js"></script>
+    </body>
+</html>

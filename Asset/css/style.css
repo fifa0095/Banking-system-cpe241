@@ -789,7 +789,7 @@ a:hover{
     font-size: var(--small-font-size);
     font-weight: var(--font-medium);
     border-radius: 5rem;
-    width: 40%;
+    width: 100px;
     text-align: center;
         /* border-radius: 50%; */
 }
@@ -958,7 +958,8 @@ a:hover{
     height: auto;
     font-size: var(--normal-font-size);
     color: var(--text-color);
-    font-family: var(--body-font);
+    background-color: var(--container-alter-color);
+    /* font-family: var(--body-font); */
     padding: .75rem 1rem 0.75rem;
     font-weight: var(--font-semi-bold);
 
@@ -1026,6 +1027,9 @@ a:hover{
     font-family: var(--body-font);
     transition: .3s;
 
+}
+.button__summit{
+    color:var(--text-color);
 }
 /* =================== button ================== */
 .button__summit{
@@ -1916,4 +1920,17 @@ a:hover{
 	height:auto;
     width: 1000px;
 	z-index: -10;
+   }
+   /* ============================ PIN =================== */
+   .pin-display{
+    margin-top:var(--mb-1-5);
+    width: 100%;
+    text-align:center;
+    height: auto;
+    font-size: var(--normal-font-size);
+    color: var(--text-color);
+    background-color: var(--container-alter-color);
+    /* font-family: var(--body-font); */
+    padding: .75rem 1rem 0.75rem;
+    font-weight: var(--font-semi-bold);
    }

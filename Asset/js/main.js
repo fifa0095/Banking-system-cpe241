@@ -12,28 +12,50 @@ money = 0;
   updatemoneyDisplay();
 }
 function updatemoneyDisplay() {
-  const pinDisplay = document.querySelector('.money-display');
-  pinDisplay.value = money;
+  const moneyDisplay = document.querySelector('.money-display');
+  moneyDisplay.value = money;
 }
-  
+const pinDisplay = document.getElementById('pin-display');
+const message = document.getElementById('message');
+let pin = '';
 
-// pin
-function submitPin(nextpage) {
-  // const pin-acc = document.getElementById("account-pin").value;
-
-  const pin = document.getElementById("pin").value;
-
-  if (pin.length == 6) {
-    //if(pin == 
-    console.log("Submitting pin:", pin);
-    window.location.href = nextpage;
-  } else {
- 
-    const message = document.getElementById("message");
-    message.innerText = "Please enter a 6-digit pin.";
-    message.style.display = "block";
+function addPin(number) {
+  if (pin.length < 6) {
+    pin += number;
+    pinDisplay.value = '*'.repeat(pin.length);
   }
 }
+
+function clearPin() {
+  pin = '';
+  pinDisplay.value = '';
+}
+
+function submitPin() {
+  if (pin === '123456') {
+    message.innerText = 'Pin correct! Access granted.';
+  } else {
+    message.innerText = 'Pin incorrect! Try again.';
+  }
+}
+
+// pin
+// function submitPin(nextpage) {
+//   // const pin-acc = document.getElementById("account-pin").value;
+
+//   const pin = document.getElementById("pin").value;
+
+//   if (pin.length == 6) {
+//     //if(pin == 
+//     console.log("Submitting pin:", pin);
+//     window.location.href = nextpage;
+//   } else {
+ 
+//     const message = document.getElementById("message");
+//     message.innerText = "Please enter a 6-digit pin.";
+//     message.style.display = "block";
+//   }
+// }
 
 
 
