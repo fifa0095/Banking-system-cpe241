@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registration Form</title>
+	<link rel="stylesheet" href="createaccountstyle.css">
+        <!-- incon -->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <!-- ไอคอนบนแท็บ -->
+        <link rel="shortcut icon" href="Asset/img/Baiplus_final-removebg-preview.png">
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home Page</title>
+    
+        <!-- <script src="Asset/js/main.js"></script> -->
+        <script src="Asset/js/darkmode.js"></script>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-bar home__containter header" >
+          <!--LOGO-->
+          <a href="index.html" class="logo"><img src="Asset/img/Baiplus_final-removebg-preview.png" class="nav__icon" alt="" /></i>BaiPlus</a>
+          <!--Menu Icon-->
+          <input type="checkbox" name="" id="menu">
+          <label for="menu"><i class='bx bx-menu' id="menu-icon" ></i></label>
+          <!--Navlist-->
+          <ul class="navbar">
+              <li><a href="account__main.html">Home</a></li>
+              <li class="home__dropdown-link">
+                  <div href="">ACCOUNTS&nbsp;&nbsp;<i class='bx bxs-chevron-down'></i></div>
+                  <ul class="home__dropdown" >
+                      <li><a href="account.html" >Profile Accounts</a></li>
+                      <li><a href="complex.html" >Anothers Accounts</a></li>   
+                  </ul>
+              </li>
+              <li class="home__dropdown-link">
+                <div href="">TRANSACTION&nbsp;&nbsp;<i class='bx bxs-chevron-down'></i></div>
+                <ul class="home__dropdown" >
+                    <li><a href="tranfer_selectBank.html" >Tranfer</a></li>
+                    <li><a href="paybill.html" >Pay Bill</a></li>
+                    <li><a href="withdraw.html" >Withdraw</a></li> 
+                    <li><a href="loan.html" >Loan</a></li>    
+                </ul>
+            </li>
+            <li><a href="history_tran.html">HISTORY</a></li>
+              <li><a href="card">CRADITCARD</a></li>
+
+
+              <li class="nav__btns">           
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+              </li>
+
+              <li class="home__dropdown-link">
+                <div class="nav__acc-bg">
+                    <div class="nav__img"><img src="Asset/img/avatar.svg"></div>
+                </div>
+                <ul class="home__dropdown" >
+                    <li><a href="account.html">Setting</a></li>
+                    <li><a href="complex.html">Anothers</a></li>
+                    <li><a href="index.html">Log Out</a></li>
+                </ul>
+              </li>
+          </ul>
+      </div>
+  </nav>
+
+
+<div class="account-wrapper">
+    <div class="section__title">
+      CREATE ACCOUNTS
+    </div>
+    <div class="form">
+       <div class="inputfield">
+          <label>Accout Name</label>
+          <input type="text" class="input">
+       </div>  
+       <div class="inputfield">
+          <label>Password</label>
+          <input type="password" class="input">
+       </div>  
+      <div class="inputfield">
+          <label>Confirm Password</label>
+          <input type="password" class="input">
+       </div> 
+       <div class="inputfield">
+        <label>Thai National ID Card</label>
+        <input type="text" class="input">
+     </div>  
+        <div class="inputfield">
+          <label>Accout Type</label>
+          <div class="custom_select">
+            <select>
+              <option value="">Select</option>
+              <option value="male">Savings</option>
+              <option value="female">Fixed Deposit</option>
+              <option value="female">Current Deposit</option>
+            </select>
+          </div>
+       </div> 
+      <div class="inputfield terms">
+          <label class="check">
+            <input type="checkbox" name="checkbox_name[]">
+            <span class="checkmark"></span>
+          </label>
+          <p>Agreed to terms and conditions</p>
+       </div> 
+       <form id="myForm" onsubmit="return validateForm()">
+      <div class="inputfield">
+        <input type="submit" value="Submit" class="btn">
+      </div>
+    </form>
+    </div>
+</div>	
+	
+<script>
+  function validateForm() {
+    var checkboxes = document.getElementsByName('option[]');
+    var isChecked = false;
+
+    for (var i = 0; i < checkboxes.length; i++) {
+      if (checkboxes[i].checked) {
+        isChecked = true;
+        break;
+      }
+    }
+
+    if (!isChecked) {
+      alert('Please accecpt in term');
+      return false;
+    }
+
+    // Form is valid, continue with submission
+    return true;
+  }
+</script>
+
+</body>
+</html>
