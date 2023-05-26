@@ -1,4 +1,3 @@
-
 *{
     margin: 0;
     padding: 0;
@@ -7,10 +6,10 @@
     border: none;
     text-decoration: none;
     text-transform: uppercase;
-    /* font-family: 'Kanit', sans-serif; */
+    font-family: 'Kanit', sans-serif;
 }
 
-.container
+.main-creditcard-container
 {
     min-height: 100vh;
     background: #eee;
@@ -21,7 +20,7 @@
     padding-bottom: 60px;
 }
 
-.container form
+.main-creditcard-container form
 {
     background: #fff;
     border-radius: 5px;
@@ -31,21 +30,21 @@
     padding-top: 160px;
 }
 
-.container form .inputBox
+.main-creditcard-container form .inputBox
 {
     display: block;
     color: #999;
     padding-bottom: 5px;
 }
 
-.container form .accept
+.main-creditcard-container form .accept
 {
     display: block;
     color: #999;
     padding-bottom: 5px;
 }
-.container form .inputBox input,
-.container form .inputBox select
+.main-creditcard-container form .inputBox input,
+.main-creditcard-container form .inputBox select
 {
     width: 100%;
     padding: 10px;
@@ -54,18 +53,18 @@
     color:#444;
 }
 
-.container form .flexbox
+.main-creditcard-container form .flexbox
 {
     display: flex;
     gap:15px;
 }
 
-.container form .flexbox .inputBox
+.main-creditcard-container form .flexbox .inputBox
 {
     flex:1 1 150px;    
 }
 
-.container form .submit-btn
+.main-creditcard-container form .submit-btn
 {
     width: 100%;
     background: linear-gradient(45deg, blue, #a0e9ff);
@@ -78,13 +77,13 @@
     transition: .2s linear;
 }
 
-.container form .submit-btn:hover
+.main-creditcard-container form .submit-btn:hover
 {
     letter-spacing: 2px;
     opacity: .8;
 }
 
-.container .card-container
+.main-creditcard-container .card-container
 {
     margin-bottom: -150px;
     position: relative;
@@ -92,7 +91,7 @@
     width: 400px;
 }
 
-.container .card-container .front
+.main-creditcard-container .card-container .front
 {
     position: absolute;
     height: 100%;
@@ -107,7 +106,7 @@
     transition: transform .4s ease-out;
 }
 
-.container .card__container .card__front .card__image 
+.main-creditcard-container .card-container .front .image 
 {
     display: flex;
     align-items: center;
@@ -115,12 +114,12 @@
     padding-bottom: 10px;
 }
 
-.container .card__container .card__front .card__image img
+.main-creditcard-container .card-container .front .image img
 {
     height: 50px;
 }
 
-.container .card__container .card__front .card__number-box
+.main-creditcard-container .card-container .front .card-number-box
 {
     padding: 30px 0;
     font-size: 22px;
@@ -128,22 +127,22 @@
 
 }
 
-.container .card__container .card__front .card__flexbox
+.main-creditcard-container .card-container .front .flexbox
 {
     display:  flex;
 }
 
-.container .card__container .card__front .card__flexbox .card__box:nth-child(1)
+.main-creditcard-container .card-container .front .flexbox .box:nth-child(1)
 {
     margin-right: auto;
 }
-.container .card__container .card__front .card__flexbox .card__box
+.main-creditcard-container .card-container .front .flexbox .box
 {
     font-size: 15px;
     color: #fff;
 }
 
-.container .card__container .card__back
+.main-creditcard-container .card-container .back
 {
     position: absolute;
     top: 0;
@@ -160,7 +159,7 @@
     transition: transform .4s ease-out;
 }
 
-.container .card__container .card__back .card__stripe
+.main-creditcard-container .card-container .back .stripe
 {
     background: #000;
     width: 100%;
@@ -168,18 +167,18 @@
     height: 50px;
 }
 
-.container .card__container .card__back .card__box
+.main-creditcard-container .card-container .back .box
 {
     padding: 0 20px;
 }
 
-.container .card__container .card__back .card__box span
+.main-creditcard-container .card-container .back .box span
 {
     color: #fff;
     font-size: 15px;
 }
 
-.container .card__container .card__back .card__box .card__cvv-box
+.main-creditcard-container .card-container .back .box .cvv-box
 {
     height: 50px;
     padding: 10px;
@@ -190,7 +189,7 @@
     width: 100%;
 }
 
-.container .card__container .card__back .card__box img
+.main-creditcard-container .card-container .back .box img
 {
     margin-top: 30px;
     height: 40px;
@@ -213,6 +212,6 @@ label{
     margin-bottom: 10px;
     margin-top: 10px;
 }
-.card__checkbox{
+.checkbox{
     color: #999;
 }
