@@ -145,6 +145,9 @@ html{
 }
 nav{
     margin-bottom: 2rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 body{
     margin: 0 0 var(--header-height) 0;
