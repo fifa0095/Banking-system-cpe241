@@ -99,33 +99,6 @@ body.dark-theme{
 }
 
 
-
-/*========== Button Dark/Light ==========*/
-.nav__btns{
-    display: flex;
-    align-items: center;
-    /* color: #000000; */
-}
-.nav__account{
-    /* background-color: #000000; */
-    border:var(--first-color-second) ;
-    color: var(--text-color);
-
-}
-.nav__account:hover {
-    background-color:var(--container-color);
-}
-
-.change-theme{
-    font-size: 1.25rem;
-    color: var(--title-color);
-    margin-right: var(--mb-1);
-    cursor: pointer;
-}
-
-.change-theme:hover{
-    color: var(--first-color);
-}
 /* =================== BASE =============== */
 *{
     box-sizing: border-box;
@@ -147,7 +120,7 @@ nav{
     /* margin-bottom: 99rem; */
     position: fixed;
     width: 100%;
-    z-index: 1000;
+    z-index: 100;
 }
 body{
     margin: 0 0 var(--header-height) 0;
@@ -175,6 +148,33 @@ a{
 img{
     max-width: 100%;
     height: auto;
+}
+
+/*========== Button Dark/Light ==========*/
+.nav__btns{
+    display: flex;
+    align-items: center;
+    /* color: #000000; */
+}
+.nav__account{
+    /* background-color: #000000; */
+    border:var(--first-color-second) ;
+    color: var(--text-color);
+
+}
+.nav__account:hover {
+    background-color:var(--container-color);
+}
+
+.change-theme{
+    font-size: 1.25rem;
+    color: var(--title-color);
+    margin-right: var(--mb-1);
+    cursor: pointer;
+}
+
+.change-theme:hover{
+    color: var(--first-color);
 }
 
 /* =================== Reuseable CSS Classes =============== */
@@ -249,17 +249,6 @@ img{
 
 
 /* ======================== nav ====================== */
-
-
-/* 
-.nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 35px;
-    
-} */
-
 .logo{
     display: flex;
     align-items: center;
@@ -355,12 +344,7 @@ li a{
     text-align: center;
     
 }
-/* .home__dropdown-data{
-    font-size: var(--smaller-font-size);
-    margin-left: 10px;
-    font-family: var(--body-font);
-    font-weight: var(--font-semi-bold);
-} */
+
 .nav > li, .nav > a,  .nav > i , .home__dropdown-link > div{
     font-size: var(--normal-font-size);
     margin-left: 10px;
@@ -421,6 +405,7 @@ font-weight: var(--font-semi-bold);
           hsl(136, 65%, 51%)
         );
     }
+    /* ==============================================to-home ======================================== */
 .hero-section {
     display: flex;
     justify-content: space-around;
@@ -1316,10 +1301,7 @@ a:hover{
     border: solid var(--first-color-second) 5px;
     transition: .3s;
     display: grid;
-    /* justify-content: center; */
-    /* grid-template-columns: repeat(2,1fr); */
-    /* border: solid black 1px; */
-
+ 
 }
 .select__input{
     
@@ -2146,7 +2128,7 @@ a:hover{
    .btn-primary:hover{
     opacity: 0.7;
     background-color: var(--first-color-alt);
-    font-size: var(--small-font-size);
+    /* font-size: var(--small-font-size); */
     transition: .4s;
    }
    .btn-light:hover{
@@ -2155,3 +2137,192 @@ a:hover{
     font-size: var(--small-font-size);
     transition: .4s;
    }
+
+   /* ================================================== create-card ===================== */
+   .card__container {
+    min-height: 100vh;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-top: 5rem;
+    /* padding-bottom: 60px; */
+   /* z-index: 1000; */
+}
+
+.card__container form {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .1);
+    padding: 20px;
+    width: 600px;
+    padding-top: 160px;
+}
+
+.card__container form .inputBox {
+    display: block;
+    color: #999;
+    padding-bottom: 5px;
+}
+
+.card__container form .inputBox input,
+.card__container form .inputBox select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, .3);
+    color: #444;
+}
+
+.card__container form .flexbox {
+    display: flex;
+    gap: 15px;
+}
+
+.card__container form .flexbox .inputBox {
+    flex: 1 1 150px;
+}
+
+.card__container form .submit-btn {
+    width: 100%;
+    background: blue;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.card__container form .submit-btn:hover {
+    letter-spacing: 2px;
+    opacity: .8;
+}
+
+.card__container form .submit-btn:disabled {
+    background: gray;
+    cursor: not-allowed;
+}
+
+.card__container .card-subcontainer {
+    margin-bottom: -150px;
+    position: relative;
+    height: 250px;
+    width: 400px;
+}
+
+.card__container .card-subcontainer .card__front {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, blue, #a0e9ff);
+    border-radius: 5px;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+    padding: 20px;
+    transition: transform .4s ease-out;
+}
+
+.card__container .card-subcontainer .card__front .image {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.card__container .card-subcontainer .card__front .image img {
+    height: 50px;
+}
+
+.card__container .card-subcontainer .card__front .card-number-box {
+    padding: 30px 0;
+    font-size: 22px;
+    color: var(--container-color);
+}
+
+.card__container .card-subcontainer .card__front .flexbox {
+    display: flex;
+}
+
+.card__container .card-subcontainer .card__front .flexbox .card__box:nth-child(1) {
+    margin-right: auto;
+}
+
+.card__container .card-subcontainer .card__front .flexbox .card__box {
+    font-size: 15px;
+    color: #fff;
+}
+
+.card__container .card-subcontainer .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, blue, #a0e9ff);
+    border-radius: 5px;
+    padding: 20px 0;
+    text-align: right;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+    transform: perspective(1000px) rotateY(180deg);
+    transition: transform .4s ease-out;
+}
+
+.card__container .card-subcontainer .back .stripe {
+    background: #000;
+    width: 100%;
+    margin: 10px 0;
+    height: 50px;
+}
+
+.card__container .card-subcontainer .back .card__box {
+    padding: 0 20px;
+}
+
+.card__container .card-subcontainer .back .card__box span {
+    color:var(--container-color);
+    font-size: 15px;
+}
+
+.card__container .card-subcontainer .back .card__box .cvv-box {
+    height: 50px;
+    padding: 10px;
+    margin-top: 5px;
+    color: var(--text-color);
+    background: var(--container-color);
+    border-radius: 5px;
+    width: 100%;
+}
+
+.card__container .card-subcontainer .back .card__box img {
+    margin-top: 30px;
+    height: 40px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fff;
+    background: #2b7dc0;
+    text-align: center;
+    padding: 12px 23px;
+    font-size: 15px;
+    user-select: none;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.checkbox {
+    color: #999;
+}
