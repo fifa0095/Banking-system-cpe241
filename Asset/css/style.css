@@ -575,6 +575,103 @@ font-weight: var(--font-semi-bold);
     /* border-radius: 10%; */
 
 }
+/* =================== button ================== */
+
+.button__summit{
+    border: outset 5px var(--first-color);
+    margin-top: var(--mb-0-25);
+    border-radius: 0.25rem;
+    padding: .75rem 1rem 0.75rem;
+    width: 100%;
+    background-color: var(--container-color) ;
+    color: var(--first-color);
+    font-family: var(--body-font);
+    font-weight: var(--normal-font-size);
+    text-align: center;
+
+}
+
+.button__summit:hover{
+    color: var(--container-color);
+	/* font-size: var(--h3-font-size); */
+	font-weight: var(--font-semi-bold);
+    background-color: var(--first-color-alt);
+    box-shadow: none;
+    transition: .5s;
+}
+
+.button__money{
+    /* border: solid 2px black; */
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0px;
+    /* margin-left: 12%; */
+    /* align-items: center; */
+    
+}
+.button__moneychoice{
+    /* border: solid 2px black; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 0.5rem;
+    
+}
+.button__moneybox{
+    width: 10rem;
+    /* padding: auto; */
+    color: var(--input-color);
+    font-family: var(--body-font);
+    font-size: var(--h3-font-size);
+    padding: .75rem 0.5rem 0.75rem;
+    background-color: var(--first-color);
+    border: none;
+    border-radius: 0.25rem;
+    
+    
+}
+.button__input{
+    margin-top:var(--mb-1-5);
+    width: 100%;
+    text-align:center;
+    height: auto;
+    font-size: var(--h2-font-size);
+    color: var(--text-color);
+    font-family: var(--body-font);
+    box-shadow: var(--box-shadow);
+    padding: .75rem 1rem 0.75rem;
+}
+/* =================== info ============== */
+.info{
+    font-size: var(--medium-font-size);
+    font-weight: var(--font-semi-bold);
+    font-family: var(--body-font);
+    color: var(--text-color);
+}
+.info__money-amount{
+    color: var(--text-color);
+}
+.info_id-commit{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 0.5rem;
+}
+.info__withdraw-code{
+    text-align: right;
+    color: var(--first-color);
+    font-family: var(--body-font);
+    font-size: var(--h2-font-size);
+}
+.info__money-withdraw{
+    text-align: right;
+    color: var(--first-color);
+}
+
+.info__money{
+    text-align: start;
+    color: var(--first-color);
+}
 /* ============================== log in ======================== */
 .forgot__pasword{
     font-size: var(--small-font-size);
@@ -967,7 +1064,14 @@ a:hover{
         color: var(--container-color);
     }
     
-
+/* =======================tranfer================= */
+#tranfer{
+   /* bottom: -2; */
+    display: flex;
+    /* text-align: center; */
+    /* align-items: center; */
+    justify-content: space-around;
+}
 /* ======================= with draw ============== */
 .withdraw__img{
     width: 3rem;
@@ -1031,7 +1135,7 @@ a:hover{
 }
 .withdraw__container{
     
-    width: 70%;
+    width: 65%;
     position: absolute;
     border: outset 6px var(--first-color-alt);
     margin-top: var(--mb-0-25);
@@ -1050,7 +1154,7 @@ a:hover{
     /* background-color: var(--input-color);*/
     /* border: var(--first-color) 1px ;  */
     cursor: pointer;
-    background: var(--first-color-lighter);
+    background: var(--first-color-alt);
     color: var(--container-color);
     transition: 0.4s all linear;
     /* transform: rotate(90deg); */
@@ -1062,121 +1166,51 @@ a:hover{
     color: var(--text-color);
 }
 .withdraw__account,.withdraw__phone-box{
-    width: auto;
+    width: 50%;
     text-align: center;
     font-family: var(--body-font);
     transition: .3s;
-
+    color: var(--text-color);
+    background-color: var(--container-alter-color);
+    border: outset 3px var(--first-color-alt);
+    border-radius: 1rem;
 }
-
-/* =================== button ================== */
-
-.button__summit{
-    border: outset 5px var(--first-color);
-    margin-top: var(--mb-0-25);
-    border-radius: 0.25rem;
-    padding: .75rem 1rem 0.75rem;
-    width: 100%;
-    background-color: var(--container-color) ;
-    color: var(--first-color);
-    font-family: var(--body-font);
-    font-weight: var(--normal-font-size);
+.withdraw__account select {
+    /* width: 50%; */
     text-align: center;
-
-}
-
-.button__summit:hover{
-    color: var(--container-color);
-	/* font-size: var(--h3-font-size); */
-	font-weight: var(--font-semi-bold);
-    background-color: var(--first-color-alt);
-    box-shadow: none;
-    transition: .5s;
-}
-
-.button__money{
-    /* border: solid 2px black; */
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-    padding: 20px 0px;
-    /* margin-left: 12%; */
-    /* align-items: center; */
-    
-}
-.button__moneychoice{
-    /* border: solid 2px black; */
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 0.5rem;
-    
-}
-.button__moneybox{
-    width: 10rem;
-    /* padding: auto; */
-    color: var(--input-color);
     font-family: var(--body-font);
-    font-size: var(--h3-font-size);
-    padding: .75rem 0.5rem 0.75rem;
-    background-color: var(--first-color);
-    border: none;
-    border-radius: 0.25rem;
-    
-    
-}
-.button__input{
-    margin-top:var(--mb-1-5);
-    width: 100%;
-    text-align:center;
-    height: auto;
-    font-size: var(--h2-font-size);
+    /* transition: .3s; */
     color: var(--text-color);
-    font-family: var(--body-font);
-    box-shadow: var(--box-shadow);
-    padding: .75rem 1rem 0.75rem;
-}
-/* =================== info ============== */
-.info{
-    font-size: var(--medium-font-size);
-    font-weight: var(--font-semi-bold);
-    font-family: var(--body-font);
-}
-.info__money-amount{
-    color: var(--text-color);
-}
-.info_id-commit{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 0.5rem;
-}
-.info__withdraw-code{
-    text-align: right;
-    color: var(--first-color);
-    font-family: var(--body-font);
-    font-size: var(--h2-font-size);
-}
-.info__money-withdraw{
-    text-align: right;
-    color: var(--first-color);
+    background-color: var(--container-alter-color);
+    border: outset 3px var(--first-color-alt);
+    border-radius: 1rem; 
 }
 
-.info__money{
-    text-align: start;
-    color: var(--first-color);
-}
+
 /* ====================== confirm ============ */
 .withdraw__data-comfirm{
         /* border: 2px solid black; */
         grid-template-rows: repeat(2,1fr);
         gap: 0.5rem;
 }
-
+.withdraw__amount-money{
+    /* grid-template-columns: repeat(2,1fr); */
+    width: 100%;
+    border-radius: 10%;
+    background-color: var(--container-alter-color);
+    padding:.5rem 1.5rem .5rem .5rem;
+    border-radius: .25rem;
+    grid-template-columns: repeat(2,1fr);
+    /* border: solid black 1px; */
+    margin-top: var(--mb-1);
+    text-align: start;
+    /* margin-right: 12%; */
+}
 .withdraw__amount{
     /* grid-template-columns: repeat(2,1fr); */
     width: 100%;
     border-radius: 10%;
-    background-color: var(--container-color);
+    background-color: var(--container-alter-color);
     padding:.5rem 1.5rem .5rem .5rem;
     border-radius: .25rem;
     grid-template-columns: repeat(2,1fr);
@@ -1189,10 +1223,12 @@ a:hover{
 .withdraw__box-acc-commit{
     border-radius: 10%;
     margin: .25rem .5rem .25rem .5rem;
-    background-color: var(--container-color);
+    background-color: var(--container-alter-color);
     border-radius: .25rem;
-    box-shadow: var(--box-shadow);
-    transition: .3s;
+    /* box-shadow: var(--box-shadow); */
+    padding:10px;
+    border: outset var(--first-color-alt) 5px;
+    /* transition: .3s; */
     grid-template-columns: repeat(2,1fr);
     /* border: solid black 1px; */ 
 }
@@ -1291,6 +1327,7 @@ a:hover{
     color: var(--text-color);
     font-family: var(--body-font);
     padding:.5rem .25rem;
+    background-color: var(--container-alter-color);
     border: var(--container-alter-color) solid 2px;
     border-radius: .25rem;
 }
@@ -1966,23 +2003,36 @@ a:hover{
    .test-img{
     position: absolute;
 	bottom: -1;
-    right: -1;
-    margin-left: 0px;
+    left: 0;
+    margin-left: 150px;
 	height:auto;
-    width: 1000px;
+    width: 200px;
 	z-index: -1;
+    /* border: #7d2ae8 solid; */
    }
    .test-img2{
     position: absolute;
 	bottom: 0;
     right: 0;
     transform: rotate(-180deg);
-    margin-right: 250px;
+    margin-right: 150px;
 	height:auto;
     width: 200px;
-	z-index:-10;
+	z-index:-1;
    }
-   
+
+   .test-img3{
+    position: fixed;
+	bottom: 5;
+    left: 0;
+    /* right: 0; */
+    /* margin-left: 150px; */
+	height:auto;
+    width:100%;
+	z-index: -10;
+    opacity: 0.5;
+    background:var(--container-color);
+   }
    /* ============================ PIN =================== */
    .pin-display{
     margin-top:var(--mb-1-5);
