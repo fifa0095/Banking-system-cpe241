@@ -1085,7 +1085,7 @@ a:hover{
     height: auto;
     font-size: var(--normal-font-size);
     color: var(--text-color);
-    background-color: var(--container-alter-color);
+    background-color: var(--container-color);
     /* font-family: var(--body-font); */
     padding: .75rem 1rem 0.75rem;
     font-weight: var(--font-semi-bold);
@@ -1134,7 +1134,7 @@ a:hover{
 }
 .withdraw__container{
     
-    width: 65%;
+    width: 60%;
     position: absolute;
     border: outset 6px var(--first-color-alt);
     margin-top: var(--mb-0-25);
@@ -1147,11 +1147,13 @@ a:hover{
 }
 .withdraw__account:hover
 ,.withdraw__phone-box:hover
+/* ,.select__container:hover */
 ,.select__box:hover
 ,.select__input:hover
 ,.pay__box:hover{
     /* background-color: var(--input-color);*/
     /* border: var(--first-color) 1px ;  */
+    box-shadow: var(--box-shadow);
     cursor: pointer;
     background: var(--first-color-alt);
     color: var(--container-color);
@@ -1310,7 +1312,7 @@ a:hover{
     background-color: var(--container-alter-color);
     padding:.5rem .25rem;
     border-radius: .25rem;
-    box-shadow: var(--box-shadow);
+    /* box-shadow: var(--box-shadow); */
     border: solid var(--first-color-second) 5px;
     transition: .3s;
     display: grid;
