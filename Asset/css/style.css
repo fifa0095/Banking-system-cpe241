@@ -1134,7 +1134,7 @@ a:hover{
 }
 .withdraw__container{
     
-    width: 60%;
+    width: 800px;
     position: absolute;
     border: outset 6px var(--first-color-alt);
     margin-top: var(--mb-0-25);
@@ -1316,6 +1316,7 @@ a:hover{
     border: solid var(--first-color-second) 5px;
     transition: .3s;
     display: grid;
+    /* justify-content: center; */
     /* grid-template-columns: repeat(2,1fr); */
     /* border: solid black 1px; */
 
@@ -1328,8 +1329,8 @@ a:hover{
     color: var(--text-color);
     font-family: var(--body-font);
     padding:.5rem .25rem;
-    background-color: var(--container-alter-color);
-    border: var(--container-alter-color) solid 2px;
+    background-color: var(--container-color);
+    border: var(--container-alter-color) inset 3px;
     border-radius: .25rem;
 }
 
@@ -1341,14 +1342,14 @@ a:hover{
 }
 
 .pay__container{
-    border-radius: 10%;
+    /* border-radius: 10%; */
     margin: .25rem .5rem .25rem .5rem;
-    background-color: var(--container-color);
+    background-color: var(--container-alter-color);
     padding:.5rem .25rem;
-    border-radius: .25rem;
-    box-shadow: var(--box-shadow);
+    /* border-radius: .25rem; */
+    /* box-shadow: var(--box-shadow); */
     transition: .3s;
-     /* border: solid violet 1px; */
+     border: outset 5px var(--first-color-alt);
 
 }
 .pay__box{
@@ -1357,23 +1358,49 @@ a:hover{
     background-color: var(--container-color);
     padding:.5rem .25rem;
     border-radius: .25rem;
-    box-shadow: var(--box-shadow);
+    border: solid 3px var(--first-color-lighter);
+    /* box-shadow: var(--box-shadow); */
     transition: .3s;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    /* align-content: center; */
-    border: none;
+    /* color: var(--container-alter-color); */
 }
 .pay__box-img
 {
-    align-items: center;
+    display: flex;
+    justify-content: center;
 
 }
 .pay__box-label{
+    margin-top: 0.75rem;
+    color: var(--text-color);
     text-align: left;
 
 }
-
+.pay__box-commit{
+    border-radius: 10%;
+    margin: .25rem .5rem .25rem .5rem;
+    background-color: var(--container-alter-color);
+    padding:.5rem .25rem;
+    border-radius: .25rem;
+    border: solid 5px var(--first-color-alt);
+    /* box-shadow: var(--box-shadow); */
+    transition: .3s;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.pay__container{
+    border-radius: 10%;
+    margin: .25rem .5rem .25rem .5rem;
+    background-color: var(--container-alter-color);
+    padding:.5rem .25rem;
+    border-radius: .25rem;
+    /* box-shadow: var(--box-shadow); */
+    border: solid var(--first-color-second) 5px;
+    transition: .3s;
+    display: flex;
+    justify-content: center;
+}
 /* ================== Receipt ================== */
 .receipt{
     display: flex;
