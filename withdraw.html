@@ -73,11 +73,11 @@
             <!--==================== HOME ====================-->
             
             <section class="withdraw section" id="withdraw">
-                <div class="withdraw__container grid container">
+            <div class="withdraw__container grid container">
                 <h2 class="section__title">With Draw</h2>
                 <span class="section__subtitle">Lorem ipsum dolor sit amet.</span>
                 
-                <div class="withdraw__mainacc grid">
+                <div class="grid">
                     <div class="subtitle">Account</div>
                     <div class="withdraw__box-acc ">
                         <img src="asset/img/account001.jpg" alt="" class="withdraw__img">
@@ -106,30 +106,31 @@
                         
                         </div> -->
                         <div class="button__money">
-                        <div class="button__moneychoice">
-                            <button type="button" class="button__moneybox " onclick="addmoneyNumber(100)">100</button>
-                            <button type="button" class="button__moneybox " onclick="addmoneyNumber(200)">200</button>
-                            <button type="button" class="button__moneybox " onclick="addmoneyNumber(500)">500</button>
-                            <button type="button" class="button__moneybox " onclick="addmoneyNumber(1000)">1000</button>
-                            <button type="button" class="button__moneybox " onclick="addmoneyNumber(5000)">5000</button>
-                            <button type="button" class="button__moneybox " onclick="addmoneyNumber(10000)">10000</button>
-                            <button type="button" class="button__summit " onclick="clearmoney()">Clear</button>
-                            
-                        </div>
+                            <div class="button__container">
+                                <div class="button__moneychoice">
+                                    <button type="button" class="button__moneybox " onclick="addmoneyNumber(100)">100</button>
+                                    <button type="button" class="button__moneybox " onclick="addmoneyNumber(200)">200</button>
+                                    <button type="button" class="button__moneybox " onclick="addmoneyNumber(500)">500</button>
+                                    <button type="button" class="button__moneybox " onclick="addmoneyNumber(1000)">1000</button>
+                                    <button type="button" class="button__moneybox " onclick="addmoneyNumber(5000)">5000</button>
+                                    <button type="button" class="button__moneybox " onclick="addmoneyNumber(10000)">10000</button>
+                                    <button type="button" class="button__summit " onclick="clearmoney()">Clear</button>
+                                    
+                                </div>
 
-                        <form >
-                            <label for="amount"></label>
-                            <input type="number" class="money-display "placeholder="100.00-20,000" autocomplete="off">
-                            <!-- <input class="button__input" type="text" id="pin" name="pin" placeholder="100.00-20,000"> -->
-                        </form>
-                    </div>
+                                <form >
+                                    <input type="number" class="money-display "placeholder="100.00-20,000" autocomplete="off">
+                                    <!-- <input class="button__input" type="text" id="pin" name="pin" placeholder="100.00-20,000"> -->
+                                </form>
+                            </div>
+                        </div>
                     </div>
 
       
                     
                     <form action="withdraw_commit.html">
                             
-                            <button class="button__summit button__input info" name="INSERT" type="submit" id="INSERT" value="INSERT">Summit</button>
+                            <button class="button__summit button__input " name="" type="submit"  value="summit">Summit</button>
                         
                         </form>
                 </div>

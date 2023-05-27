@@ -789,10 +789,23 @@ a:hover{
 }
 .signup__topic{
     margin-bottom: 1rem;
+    font-size: var(--h3-font-size);
+    font-family: var(--body-font);
+    color: var(--text-color-light);
+    
 }
-.signup__gender-box{
+.signup__gender-box label{
     font-size: var(--normal-font-size);
+    font-family: var(--body-font);
+    color: var(--text-color-light);
+    font-weight: var(--font-semi-bold);
 }
+/* .signup__gender-box input{
+    /* font-size: var(--big-font-size); */
+    /* font-family: var(--body-font); 
+   background-color: var(--first-color-lighter);
+    font-weight: var(--font-semi-bold);
+} */
 .signup__btn-link{
     padding: 8px 22px;
     background-color: var(--first-color);
@@ -996,11 +1009,11 @@ a:hover{
     border-radius: 10%;
     margin: .25rem .5rem .25rem .5rem;
     background-color: var(--container-color);
-    padding:.5rem .25rem;
+    /* padding:.5rem .25rem; */
     border-radius: .25rem;
     border: var(--first-color-second) outset 5px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 .withdraw__data{
     /* border: 2px solid black; */
@@ -1016,6 +1029,7 @@ a:hover{
 .withdraw__container{
     
     width: 70%;
+    position: absolute;
     border: outset 6px var(--first-color-second);
     margin-top: var(--mb-0-25);
     box-shadow: var(--box-shadow);
@@ -1051,33 +1065,39 @@ a:hover{
     transition: .3s;
 
 }
-.button__summit{
-    color:var(--text-color);
-}
+
 /* =================== button ================== */
+
 .button__summit{
     border: solid 2px var(--first-color);
     margin-top: var(--mb-0-25);
     border-radius: 0.25rem;
     padding: .75rem 1rem 0.75rem;
     width: 100%;
-    background-color: black;
-    color: var(--input-color);
+    background-color: var(--container-color) ;
+    color: var(--first-color);
     font-family: var(--body-font);
+    font-weight: var(--normal-font-size);
     text-align: center;
 
 }
+
 .button__summit:hover{
-    background-color: var(--first-color);
-    /* border: none; */
-
-
+    color: var(--container-color);
+	/* font-size: var(--h3-font-size); */
+	font-weight: var(--font-semi-bold);
+    background-color: var(--first-color-lighter);
+    box-shadow: none;
+    transition: .5s;
 }
+
 .button__money{
     /* border: solid 2px black; */
-    width: 100%;
-    display: block;
-    margin-left: 12%;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0px;
+    /* margin-left: 12%; */
     /* align-items: center; */
     
 }
@@ -1107,9 +1127,10 @@ a:hover{
     width: 100%;
     text-align:center;
     height: auto;
-    font-size: var(--normal-font-size);
-    color: var(--input-color);
+    font-size: var(--h2-font-size);
+    color: var(--text-color);
     font-family: var(--body-font);
+    box-shadow: var(--box-shadow);
     padding: .75rem 1rem 0.75rem;
 }
 /* =================== info ============== */
@@ -1267,7 +1288,7 @@ a:hover{
     color: var(--text-color);
     font-family: var(--body-font);
     padding:.5rem .25rem;
-    border: gray solid 1px;
+    border: var(--container-alter-color) solid 2px;
     border-radius: .25rem;
 }
 
@@ -1939,19 +1960,21 @@ a:hover{
    .test-img{
     position: absolute;
 	bottom: -1;
-    right: 5;
+    right: 1;
+    margin-left: 80px;
 	height:auto;
     width: 1000px;
-	z-index: -1;
+	z-index: 10;
    }
    .test-img2{
     position: absolute;
-	bottom: 2rem;
-    left: 25rem;
+	bottom: 0;
+    right: 0;
     transform: rotate(-180deg);
+    margin-right: 320px;
 	height:auto;
     width: 200px;
-	z-index: -2;
+	z-index:10;
    }
    
    /* ============================ PIN =================== */

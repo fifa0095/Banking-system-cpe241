@@ -15,6 +15,10 @@ function updatemoneyDisplay() {
   const moneyDisplay = document.querySelector('.money-display');
   moneyDisplay.value = money;
 }
+
+
+
+
 const pinDisplay = document.getElementById('pin-display');
 const message = document.getElementById('message');
 let pin = '';
