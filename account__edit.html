@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Asset/css/swiper-bundle.min.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="Asset/css/style.css">
+    <!-- incon -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/solid.css">
+    <!-- ไอคอนบนแท็บ -->
+    <link rel="shortcut icon" href="Asset/img/Baiplus_final-removebg-preview.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Account Setting</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="Asset/css/style.css">
+	<link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<script src="Asset/js/main.js"></script>
+<script src="Asset/js/darkmode.js"></script>
+<body>
+
+	<nav>
+        <div class="nav-bar home__containter header" >
+         
+              <a href="account__main.html" class="logo"><img src="Asset/img/Baiplus_final-removebg-preview.png" class="nav__icon" alt="" /></i>BaiPlus</a>
+           
+              <input type="checkbox" name="" id="menu">
+              <label for="menu"><i class='bx bx-menu' id="menu-icon" ></i></label>
+           
+              <ul class="navbar">
+                  <li><a href="account__main.html">Home</a></li>
+                                    
+                  <li class="home__dropdown-link">
+                    <div href="">ACCOUNTS&nbsp;&nbsp;<i class='bx bxs-chevron-down'></i></div>
+                    <ul class="home__dropdown" >
+                        <li><a href="account__main.html" >Profile Accounts</a></li>
+                        <li><a href="account__other.html" >Anothers Accounts</a></li>   
+                    </ul>
+                </li>
+                  <li class="home__dropdown-link">
+                    <div href="">TRANSACTION&nbsp;&nbsp;<i class='bx bxs-chevron-down'></i></div>
+                    <ul class="home__dropdown" >
+                        <li><a href="tranfer_selectBank.html" >Tranfer</a></li>
+                        <li><a href="paybill.html" >Pay Bill</a></li>
+                        <li><a href="withdraw.html" >Withdraw</a></li> 
+                        <li><a href="loan.html" >Loan</a></li>    
+                    </ul>
+                </li>
+                <li><a href="history_tran.html">HISTORY</a></li>
+                  <li><a href="card">CRADITCARD</a></li>
+
+
+                  <li class="nav__btns">           
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+                  </li>
+    
+                  <li class="home__dropdown-link">
+                    <div class="nav__acc-bg">
+                        <div class="nav__img"><img src="Asset/img/avatar.svg"></div>
+                    </div>
+                    <ul class="home__dropdown" >
+                        <!-- <li><a href="account.html">Setting</a></li> -->
+                        <li><a href="account__other.html">Anothers</a></li>
+                        <li><a href="index.html">LogOut</a></li>
+                    </ul>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+	  <main class="main">
+<div class="box-editsetting">
+	<section class="py-5 my-5">
+		<div class="container">
+			<h1 class="mb-5">Account Settings</h1>
+			<div class="bg-white shadow rounded-lg d-block d-sm-flex">
+				<div class="profile-tab-nav border-right">
+					<div class="p-4">
+						<div class="img-circle text-center mb-3">
+							<img src="Asset/img/avatar.svg" alt="Image" class="edit__img shadow">
+						</div>
+						<h4 class="text-center">Pita Limjaroenrat</h4>
+					</div>
+                    <!-- button select topic for edit -->
+					<div class=" nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+						<a class="nav-link active" id="account-tab" data-toggle="pill" href="#account" role="tab" aria-controls="account" aria-selected="true">
+							<i class="fa fa-home text-center mr-1"></i> 
+							Account
+						</a>
+						<a class="nav-link" id="password-tab" data-toggle="pill" href="#password" role="tab" aria-controls="password" aria-selected="false">
+							<i class="fa fa-key text-center mr-1"></i> 
+							Password
+						</a>
+						
+						<a class="nav-link" id="application-tab" data-toggle="pill" href="#application" role="tab" aria-controls="application" aria-selected="false">
+							<i class="fa-sharp fa-solid fa-address-card"></i>
+							Address
+						</a>
+						<a class="nav-link" id="notification-tab" data-toggle="pill" href="#notification" role="tab" aria-controls="notification" aria-selected="false">
+							<i class="fa-solid fa-comments-dollar"></i>
+							Salary
+						</a>
+					</div>
+				</div>
+	
+				<div class="tab-content p-4 p-md-5" id="v-pills-tabContent">
+					<div class="tab-pane fade show active" id="account" role="tabpanel" aria-labelledby="account-tab">
+						<h3 class="mb-4">Account Settings</h3>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>First Name</label>
+								  	<input type="text" class="form-control" value="Kiran">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>Last Name</label>
+								  	<input type="text" class="form-control" value="Acharya">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>Email</label>
+								  	<input type="text" class="form-control" value="kiranacharya287@gmail.com">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>Phone number</label>
+								  	<input type="text" class="form-control" value="+91 9876543215">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>Date Of Birth</label>
+								  	<input type="date" class="form-control" value="UI Developer">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<label>Gender</label>
+								<div class="form-group">
+									<div class="gender-box">
+										<div class="gender-option">
+											<div class="gender">
+												<input type="radio" id="check-male" name="gender" checked>
+												<label for="check-male">Male</label>
+											</div>
+											<div class="gender">
+												<input type="radio" id="check-female" name="gender">
+												<label for="check-female">Female</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						<div>
+							<button class=" btn btn-primary">Update</button>
+							<button class=" btn btn-light">Cancel</button>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="password" role="tabpanel" aria-labelledby="password-tab">
+						<h3 class="mb-4">Password Settings</h3>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>Old password</label>
+								  	<input type="password" class="form-control">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>New password</label>
+								  	<input type="password" class="form-control">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>Confirm new password</label>
+								  	<input type="password" class="form-control">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									  <label>Old PIN</label>
+									  <input type="password" class="form-control">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>New PIN</label>
+								  	<input type="password" class="form-control">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>Confirm new PIN</label>
+								  	<input type="password" class="form-control">
+								</div>
+							</div>
+				
+						</div>
+						
+
+						<div>
+							<button class="btn btn-primary">Update</button>
+							<button class="btn btn-light">Cancel</button>
+						</div>
+					</div>
+					
+					<div class="tab-pane fade" id="application" role="tabpanel" aria-labelledby="application-tab">
+						<h3 class="mb-4">Address Setting</h3>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group-address">
+								  	<label>Address </label>
+								  	<input type="text" class="form-control" value="Address 1">
+									
+								</div>
+
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>Postal Code</label>
+									
+								  	<input type="text" class="form-control" value="10110">
+									  
+								</div>
+							</div>
+							
+							
+						</div>
+						<div>
+							<button class="btn btn-primary">Update</button>
+							<button class="btn btn-light">Cancel</button>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="notification" role="tabpanel" aria-labelledby="notification-tab">
+						<h3 class="mb-4">Salary Settings</h3>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>Salary</label>
+								  	<input type="text" class="form-control">
+								</div>
+							</div>
+							
+						</div>
+						<div>
+							<input type="file" id="uploadBtn">
+        					<label class="uploadBtn"for="uploadBtn"><i class='bx bx-upload'></i> Upload</label>
+						</div>
+						<div>
+							<button class="btn btn-primary">Update</button>
+							<button class="btn btn-light">Cancel</button>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+
+</main>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

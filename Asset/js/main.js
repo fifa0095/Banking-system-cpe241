@@ -132,4 +132,14 @@ loanAmountInput.addEventListener('input', function() {
 });
 
   
-  
+// const change = document.querySelector('.nav-link');
+
+// change.addEventListener('click', function (e) {
+//     if (e.offsetX > change.offsetWidth) {
+//       change.className = 'color';
+//     } else {
+//       change.className = 'nocolor';
+//     }
+// });
+
+

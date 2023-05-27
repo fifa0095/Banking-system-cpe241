@@ -144,7 +144,7 @@ html{
 
 }
 nav{
-    margin-bottom: 2rem;
+    /* margin-bottom: 99rem; */
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -251,14 +251,14 @@ img{
 /* ======================== nav ====================== */
 
 
-
+/* 
 .nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 35px;
     
-}
+} */
 
 .logo{
     display: flex;
@@ -276,7 +276,7 @@ img{
     background-color: var(--first-color);
 
 }
-/* ----------------------------------------- index ff ---------------- */
+/* ============ home index =============== */
 ul{
     display: flex;
     align-items: center;
@@ -302,7 +302,58 @@ li a{
     transition: .3s;
     border: var(--first-color-lighter) solid;
     /* font-size: var(--small-font-size); */
+}
 
+/* /*============================= home ======================== */
+.home{
+    margin-top: 5rem;
+    /* background: url(5.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 440px;
+    border-radius: 1.5rem;
+    align-items: center;
+}
+.home__action{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(1.75rem,auto));
+    gap:1rem;
+}
+.home-text{
+    padding-left: 35px;
+}
+.home-text h1{
+    color: var(--bg-color);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.home__about{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(18rem,auto));
+    gap:2rem;
+    padding: 2rem;
+    background-color: var(--container-alter-color);
+    /* border-radius:90px 90px 0px 0px; */
+    padding-top:5rem ;
+}
+.home__aboutus{
+    border: solid var(--first-color-alt);
+    border-radius: 10%;
+    /* display: flex;
+    width: 120%; */
+}
+.home__about-img{
+    height: 70%;
+    padding: 2rem;
+    align-items: center;
+}
+
+.btn{
+    border-radius: .25rem;
+    text-align: center;
+    
 }
 /* .home__dropdown-data{
     font-size: var(--smaller-font-size);
@@ -496,7 +547,7 @@ font-weight: var(--font-semi-bold);
         transition: 0.4s all linear;
         transform: translateY(-1rem);
     }    
-
+/* 
       .blog-section {
         width: 80%;
         margin-left: auto;
@@ -529,7 +580,7 @@ font-weight: var(--font-semi-bold);
       .article > img {
         width: 250px;
         height: 250px;
-      }
+      } */
       .content {
         padding: 15px;
       }
@@ -937,62 +988,7 @@ a:hover{
     padding-bottom: 2.8rem;
     /* border: saddlebrown solid; */
 }
-/* /*============================= home ======================== */
-.home{
-    margin-top: 5rem;
-    /* background: url(5.jpg); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 440px;
-    border-radius: 1.5rem;
-    align-items: center;
-}
-.home__action{
-    display: grid;
-    grid-template-columns: repeat(2,minmax(1.75rem,auto));
-    gap:1rem;
-}
-.home-text{
-    padding-left: 35px;
-}
-.home-text h1{
-    color: var(--bg-color);
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
 
-.home__about{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(18rem,auto));
-    gap:2rem;
-    padding: 2rem;
-    background-color: var(--container-alter-color);
-    /* border-radius:90px 90px 0px 0px; */
-    padding-top:5rem ;
-}
-.home__aboutus{
-    border: solid var(--first-color-alt);
-    border-radius: 10%;
-    /* display: flex;
-    width: 120%; */
-}
-.home__about-img{
-    height: 70%;
-    padding: 2rem;
-    align-items: center;
-}
-.sales{
-    display: grid;
-    grid-template-columns: repeat(5,minmax(240px,auto));
-    gap: 2.4rem;
-
-}
-
-.btn{
-    border-radius: .25rem;
-    text-align: center;
-}
 
 
       /*==================== FOOTER ====================*/
@@ -2048,4 +2044,85 @@ a:hover{
     /* font-family: var(--body-font); */
     padding: .75rem 1rem 0.75rem;
     font-weight: var(--font-semi-bold);
+   }
+
+
+
+   /* =============== edit account================= */
+   .edit__img{
+    height: 100px;
+    border-radius: 10rem;
+    /* border-radius: 20%; */
+   }
+   .py-5{
+   display: flex;
+   justify-content: center;
+   }
+   #v-pills-tab a{/*หัวข้อแก้*/
+    display: flex;
+    justify-content: start;
+    gap:3px;
+    color: var(--text-color);
+    margin-bottom: 3px;
+    /* border: saddlebrown solid; */
+    /* background-color: var(--first-color); */
+
+   }
+   #v-pills-tab {/*nav bar ใหญ่ไว้เลือก หัวข้อที่แก้*/
+    width: 200px;
+    /* border: saddlebrown solid; */
+    /* background-color: var(--first-color); */
+   }
+   .profile-tab-nav{/*nav bar ใหญ่ไว้เลือก หัวข้อที่แก้*/
+    border:outset 2px var(--text-color);
+    
+    /* border-bottom: none; */
+    /* box-shadow: var(--box-shadow); */
+    background-color: var(--container-color);
+    width: 210px;
+   }
+   #v-pills-tabContent{/*box ที่ครอบ ฟอร์มทั้งหมด*/
+    /* border: salmon solid; */
+    border:solid 2px var(--text-color);
+    border-left: none;
+    /* box-shadow: var(--box-shadow); */
+    width: 700px;
+    background-color: var(--container-alter-color);
+    color: var(--text-color);
+   }
+   /* .nav-link:active{/*id ที่ระบุว่าตอนนี้เปิดหัวข้ออะไรอยู่
+    background-color: var(--first-color);
+   
+   change:after { content: 'AFTER'; position: absolute; }
+
+   change.color { background: yellow; }
+   change.nocolor:after { background: yellow; }
+ */
+
+   #v-pills-tabContent input{
+    background-color: var(--container-color);
+    border: inset 3px var(--container-color);
+    color: var(--text-color);
+   }
+   #v-pills-tabContent label{
+    
+    font-family: var(--body-font);
+    font-weight: var(--font-semi-bold);
+    font-size: var(--normal-font-size);
+   }
+   .btn-primary{
+    background-color: var(--first-color);
+    border: none;
+   }
+   .btn-primary:hover{
+    opacity: 0.7;
+    background-color: var(--first-color-alt);
+    font-size: var(--small-font-size);
+    transition: .4s;
+   }
+   .btn-light:hover{
+    opacity: 0.7;
+    /* background-color: var(--first-color-alt); */
+    font-size: var(--small-font-size);
+    transition: .4s;
    }
