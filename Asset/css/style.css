@@ -997,18 +997,21 @@ a:hover{
 .withdraw__box-acc{
     border-radius: 10%;
     margin: .25rem .5rem .25rem .5rem;
-    background-color: var(--container-color);
+    background-color: var(--container-alter-color);
     padding:.5rem .25rem;
     border-radius: .25rem;
     border: var(--first-color-second) outset 5px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
-
+.money-display{
+    color: var(--text-color);
+    border: inset 5px var(--first-color-lighter);
+}
 .withdraw__box-money{
     border-radius: 10%;
     margin: .25rem .5rem .25rem .5rem;
-    background-color: var(--container-color);
+    background-color: var(--container-alter-color);
     /* padding:.5rem .25rem; */
     border-radius: .25rem;
     border: var(--first-color-second) outset 5px;
@@ -1030,7 +1033,7 @@ a:hover{
     
     width: 70%;
     position: absolute;
-    border: outset 6px var(--first-color-second);
+    border: outset 6px var(--first-color-alt);
     margin-top: var(--mb-0-25);
     box-shadow: var(--box-shadow);
     border-radius: 0.25rem;
@@ -1047,7 +1050,7 @@ a:hover{
     /* background-color: var(--input-color);*/
     /* border: var(--first-color) 1px ;  */
     cursor: pointer;
-    background: var(--first-color);
+    background: var(--first-color-lighter);
     color: var(--container-color);
     transition: 0.4s all linear;
     /* transform: rotate(90deg); */
@@ -1069,7 +1072,7 @@ a:hover{
 /* =================== button ================== */
 
 .button__summit{
-    border: solid 2px var(--first-color);
+    border: outset 5px var(--first-color);
     margin-top: var(--mb-0-25);
     border-radius: 0.25rem;
     padding: .75rem 1rem 0.75rem;
@@ -1086,7 +1089,7 @@ a:hover{
     color: var(--container-color);
 	/* font-size: var(--h3-font-size); */
 	font-weight: var(--font-semi-bold);
-    background-color: var(--first-color-lighter);
+    background-color: var(--first-color-alt);
     box-shadow: none;
     transition: .5s;
 }
@@ -1880,7 +1883,7 @@ a:hover{
     text-align: center;
     border-radius: 2rem;
     border:inset 5px var(--first-color-second);
-    width: 400px;
+    width: 20vw;
     height: 40vh;
    }
    .account__box:hover{
@@ -1933,9 +1936,12 @@ a:hover{
     height: auto;
    }
    .account__container{
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-around; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: .5rem;
     margin-top: 5vh;
    }
    .account__center{
@@ -1960,21 +1966,21 @@ a:hover{
    .test-img{
     position: absolute;
 	bottom: -1;
-    right: 1;
-    margin-left: 80px;
+    right: -1;
+    margin-left: 0px;
 	height:auto;
     width: 1000px;
-	z-index: 10;
+	z-index: -1;
    }
    .test-img2{
     position: absolute;
 	bottom: 0;
     right: 0;
     transform: rotate(-180deg);
-    margin-right: 320px;
+    margin-right: 250px;
 	height:auto;
     width: 200px;
-	z-index:10;
+	z-index:-10;
    }
    
    /* ============================ PIN =================== */
