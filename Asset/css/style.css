@@ -2152,9 +2152,9 @@ a:hover{
 }
 
 .card__container form {
-    background: #fff;
+    background: var(--container-color);
     border-radius: 5px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, .1);
+    box-shadow:var(--box-shadow);
     padding: 20px;
     width: 600px;
     padding-top: 160px;
@@ -2162,17 +2162,19 @@ a:hover{
 
 .card__container form .inputBox {
     display: block;
-    color: #999;
+    color: var(--container-alter-color);
     padding-bottom: 5px;
 }
-
+.inputBox span{
+    color: var(--text-color);
+}
 .card__container form .inputBox input,
 .card__container form .inputBox select {
     width: 100%;
     padding: 10px;
     border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, .3);
-    color: #444;
+    border: 2px solid var(--text-color-light);
+    color: var(--text-color);
 }
 
 .card__container form .flexbox {
@@ -2186,12 +2188,12 @@ a:hover{
 
 .card__container form .submit-btn {
     width: 100%;
-    background: blue;
+    background: var(--first-color);
     margin-top: 20px;
     padding: 10px;
     font-size: 20px;
     border-radius: 10px;
-    color: #fff;
+    color:var(--text-color);
     cursor: pointer;
     transition: .2s linear;
 }
@@ -2199,10 +2201,12 @@ a:hover{
 .card__container form .submit-btn:hover {
     letter-spacing: 2px;
     opacity: .8;
+    color: var(--container-color);
+    /* background-color: var(--first-color-second); */
 }
 
 .card__container form .submit-btn:disabled {
-    background: gray;
+    background: var(--first-color-second);
     cursor: not-allowed;
 }
 
@@ -2222,7 +2226,7 @@ a:hover{
     background: linear-gradient(45deg, blue, #a0e9ff);
     border-radius: 5px;
     backface-visibility: hidden;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+    box-shadow: 0 15px 25px var(--text-color);
     padding: 20px;
     transition: transform .4s ease-out;
 }
@@ -2254,7 +2258,7 @@ a:hover{
 
 .card__container .card-subcontainer .card__front .flexbox .card__box {
     font-size: 15px;
-    color: #fff;
+    color: var(--container-color);
 }
 
 .card__container .card-subcontainer .back {
@@ -2268,13 +2272,13 @@ a:hover{
     padding: 20px 0;
     text-align: right;
     backface-visibility: hidden;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+    box-shadow: var(--box-shadow);
     transform: perspective(1000px) rotateY(180deg);
     transition: transform .4s ease-out;
 }
 
 .card__container .card-subcontainer .back .stripe {
-    background: #000;
+    background: var(--text-color);
     width: 100%;
     margin: 10px 0;
     height: 50px;
@@ -2285,7 +2289,7 @@ a:hover{
 }
 
 .card__container .card-subcontainer .back .card__box span {
-    color:var(--container-color);
+    color:var(--text-color);
     font-size: 15px;
 }
 
@@ -2311,8 +2315,8 @@ input[type="file"] {
 label {
     display: inline-block;
     text-transform: uppercase;
-    color: #fff;
-    background: #2b7dc0;
+    color: var(--container-color);
+    background: var(--first-color-second);
     text-align: center;
     padding: 12px 23px;
     font-size: 15px;
@@ -2324,5 +2328,5 @@ label {
 }
 
 .checkbox {
-    color: #999;
+    color: var(--text-color-light);
 }
